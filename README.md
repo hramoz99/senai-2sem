@@ -6,3 +6,14 @@ Este repositório contém conceitos abordados no 2º semestre do Curso Técnico 
 
 ### Objetivos
 
+- Comandos do Cisco IOS
+- Linux (VM)
+- Fundamentos de computação em nuvem (AWS)
+- Confgurações e conceitos em um Windows Server (AMAZON EC2)
+- Scripts
+
+### Cursos Realizados No Semestre 
+
+Sites | Cursos 
+----  | ----
+
