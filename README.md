@@ -16,4 +16,12 @@ Este repositório contém conceitos abordados no 2º semestre do Curso Técnico 
 
 Sites | Cursos 
 ----  | ----
-
+[CCNA  R&S](https://www.netacad.com/) | Introdução á Redes
+[CCNA R&S](https://www.netacad.com/) |  Roteamento e Comutação 
+[CCNA R&S](https://www.netacad.com/) | Dimensionamento de Redes 
+[CCNA R&S](https://www.netacad.com/) |  Redes de Conexão
+[AWS Educate](https://aws.amazon.com/) | Aplicação dos serviços da AWS
+[AWS Academy](https://aws.amazon.com/) |  Conhecimento do Mundo  Cloud
+[Senai EAD](https://ead.sp.senai.br/) | Excel Básico
+[Senai EAD](https://ead.sp.senai.br/) | Fundamentos de logística
+[Senai EAD](https://ead.sp.senai.br/) | Privacidade e Proteção de dados 
