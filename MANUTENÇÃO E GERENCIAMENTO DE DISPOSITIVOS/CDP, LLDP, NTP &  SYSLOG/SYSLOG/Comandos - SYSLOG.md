@@ -1,8 +1,8 @@
 ## SYSLOG
 
-*Forçar eventos registrados a exibirem a data e hora*
+#### Forçar eventos registrados a exibirem a data e hora
 
->OBS: Palavra-chave 'datetime' - relógio configurado manualmente
+> Palavra-chave 'datetime' - relógio configurado manualmente
 
 ```
 (config)#service timestamps log datetime
@@ -12,7 +12,7 @@ ou
 
 #### Armazenar as mensagens de log por padrão
 
-OBS: os comandos devem seguir essa ordem
+> Oss comandos devem seguir essa ordem
 
 ```
 (config)#logging console
@@ -27,7 +27,7 @@ OBS: os comandos devem seguir essa ordem
 
 ## Comandos do roteador e do switch para clientes de Syslog
 
-OBS: São necessários três passos para que o roteador envie mensagens do sistema a um Servidor syslog, onde elas podem ser armazenadas, 
+> São necessários três passos para que o roteador envie mensagens do sistema a um Servidor syslog, onde elas podem ser armazenadas, 
 filtradas e analisadas:
 
 #### PASSO 1
@@ -56,7 +56,7 @@ ou
 #### PASSO 4
 **Filtrar as saídas de syslog**
 
-Exemplo
+**Exemplo**
 
 #show logging | include changed state to up
 #show logging | begin Jun 12 22:35
