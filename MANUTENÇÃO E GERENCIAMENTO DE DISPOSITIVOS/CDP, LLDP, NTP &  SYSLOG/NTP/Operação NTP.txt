@@ -3,8 +3,8 @@ OPERAÇÃO NTP Operação NTP
   As redes NTP usam sistema hierárquico de fontes de horário. Cada nível do sistema é denominado stratum. O nível stratum é definido 
   como o número de contagens de saltos da fonte oficial. O horário sincronizado é distribuído através da rede usando o NTP.
 
-Servidor NTP é organizado em três níveis:
 
+Servidor NTP é organizado em três níveis:
 
    Stratum 0
 A rede NTP obtém a horas de fontes de horários oficiais. Essas fontes são dispositivos de pontualidade de alta precisão, com pouco ou nenhum atraso associado a eles.
