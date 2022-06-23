@@ -1,6 +1,6 @@
 ## CDP
 
-#### Exibir informações e verificar os status 
+#### Exibir informações e verificar o status 
 
 ```
 #show cdp
