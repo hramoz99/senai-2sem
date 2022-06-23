@@ -1,27 +1,26 @@
-SCRIPT - Exercício 10.3.1.8
+SCRIPT - ExercÃ­cio 10.3.1.8
 
-!Estabelecer Conectividade com o Servidor TFTP
-!RTA
+# Estabelecer Conectividade com o Servidor TFTP
 en
 conf t
 int g0/0
 ip add 172.16.1.1 255.255.255.0
 no shutdown
 
-!Transferir a Configuração do servidor TFTP
+# Transferir a ConfiguraÃ§Ã£o do servidor TFTP
 end 
 copy tftp running-config
 172.16.1.2
 RTA-confg
 
-!OBS: Interface g0/1 desativada (informação observada pelo comando 'sh ip interface brief')
+!OBS: Interface g0/1 desativada (informaÃ§Ã£o observada pelo comando 'sh ip interface brief')
 
-!Ativar a interface
+# Ativar a interface
 conf t
 int g0/1
 no shutdown
 
-!Configuração de backup e IOS para o servidor TFTP
+# ConfiguraÃ§Ã£o de backup e IOS para o servidor TFTP
 exit
 hostname RTA-1
 end
