@@ -56,7 +56,7 @@ ou
 #### PASSO 4
 **Filtrar as saídas de syslog**
 
-**Exemplo**
+*Exemplo*
 
 #show logging | include changed state to up
 #show logging | begin Jun 12 22:35
