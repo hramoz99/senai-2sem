@@ -24,7 +24,7 @@
 #license install [stored-location-url]
 ```
 
-**Reinicialize o dispositivo**
+**Reiniciar o dispositivo**
 
 ```
 #reload
@@ -42,7 +42,7 @@
 (config)#license boot module [module-name] technology-package [package-name]
 ```
 
-**Backup de uma cópia das licenças em um dispositivo**
+**Backup de uma cópia das licenças**
 
 ```
 #license save [file-sys:lic-location]
