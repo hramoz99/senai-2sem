@@ -3,8 +3,7 @@
 #### Definir o horário MANUALMENTE 
 
 *Exemplo*
-
-#clock set 20:36:00 dec 11 2015
+- clock set 20:36:00 dec 11 2015
 
 ```
 #clock set [hh:mm:ss] {mmm (em-inglês | apenas as 3 primeiras letras)} [dd] [aaaa]
@@ -32,7 +31,7 @@
 
 *Exemplo*
 
-(config)#clock timezone PST -8
+- (config)#clock timezone PST -8
 
 ```
 (config)#clock timezone [fuso] [gmt]
