@@ -54,7 +54,7 @@ ou
 
 **Restaurar as configurações com uma unidade USB flash**
 
-*Com o objetivo de copiar o arquivo de volta, será necessário editar o arquivo R1-Config da USB usando um editor de textos. Considere que 
+*Caso o objetivo seja copiar o arquivo de volta, será necessário editar o arquivo R1-Config da USB usando um editor de textos. Considere que 
 o nome do arquivo é R1-Config.*
 
 ```
