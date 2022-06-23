@@ -1,6 +1,6 @@
 ## Manutenção do dispositivo 
 
-**Listar todos os sistemas de arquivos disponíveis em um roteador e um switch Cisco**
+**Listar todos os sistemas de arquivos disponíveis em um roteador ou switch Cisco**
 
 ```
 #show file systems
@@ -22,7 +22,7 @@
 
 **Salvar a configuração atual ou a configuração inicial em um servidor TFTP**
 
-OBS: deve-se configurar
+*Configurar*
 
 - endereço IP do host onde o arquivo de configuração está armazenado;
 
@@ -42,11 +42,11 @@ ou
 
 **Copiar o arquivo de configuração para a unidade flash USB**
 
-OBS: A barra é opcional, mas indica o diretório raiz da unidade flash USB
+*A barra é opcional, mas indica o diretório raiz da unidade flash USB*
 
-dir - para ver o arquivo na unidade USB
+- dir - para ver o arquivo na unidade USB
 
-more - para ver o conteúdo
+- more - para ver o conteúdo
 
 ```
 #copy run usbflash0:/ 
@@ -54,8 +54,8 @@ more - para ver o conteúdo
 
 **Restaurar as configurações com uma unidade USB flash**
 
-OBS: Com o objetivo de copiar o arquivo de volta, será necessário editar o arquivo R1-Config da USB usando um editor de textos. Considere que 
-o nome do arquivo é R1-Config.
+*Com o objetivo de copiar o arquivo de volta, será necessário editar o arquivo R1-Config da USB usando um editor de textos. Considere que 
+o nome do arquivo é R1-Config.*
 
 ```
 #copy usbflash0/R1-Config running-config
