@@ -34,7 +34,7 @@ reload
 
 -------------------------------------------------
 
-# Fazer backup da imagem do IOS em um Servidor TFTP
+# Backup da imagem do IOS em um Servidor TFTP
 !R2
 en
 copy flash: tftp
