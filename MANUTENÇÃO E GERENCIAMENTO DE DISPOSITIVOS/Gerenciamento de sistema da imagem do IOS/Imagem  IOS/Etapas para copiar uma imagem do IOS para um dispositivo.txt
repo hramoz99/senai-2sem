@@ -1,0 +1,13 @@
+ETAPAS PARA COPIAR UMA IMAGEM DO IOS PARA UM DISPOSITIVO
+
+    1º Passo. Selecione um arquivo de imagem do IOS Cisco que atenda aos requisitos em termos de plataforma, recursos e software. 
+    Faça o download do arquivo em 'cisco.com' e passe para o servidor TFTP.
+
+    2º Passo. Verificar a conectividade ao servidor TFTP. Efetue um ping para o servidor TFTP a partir do roteador. 
+
+    3º Passo. Certificar de que haja espaço suficiente na memória flash do roteador que está sendo atualizado. É possível verificar a 
+    quantidade de memória flash disponível com o comando show flash0.
+
+    4º Passo. Copiar o arquivo de imagem do IOS do servidor TFTP para o roteador usando o comando 'copy'. Após executar esse comando com as URLs 
+    origem e destino, o usuário será solicitado a inserir o endereço IP do host remoto, o nome do arquivo origem e o nome de 
+    arquivo destino.
