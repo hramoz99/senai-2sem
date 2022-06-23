@@ -2,7 +2,7 @@
 
 #### Ativar o LLP nos dispositivos CISCO
 
-> OBS: para desativar o LLDP, insira o comando 'no lldp run'
+> Para desativar o LLDP, insira o comando 'no lldp run'
 
 ```
 (config)#lldp run 
