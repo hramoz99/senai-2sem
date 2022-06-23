@@ -1,6 +1,6 @@
 ## BACKUP DA IMAGEM DO IOS
 
-#### Teste de conectividade no servidor 0TFTP
+#### Teste de conectividade no servidor TFTP
 
 ```
 #ping [endereço-ip-do-servidor]
