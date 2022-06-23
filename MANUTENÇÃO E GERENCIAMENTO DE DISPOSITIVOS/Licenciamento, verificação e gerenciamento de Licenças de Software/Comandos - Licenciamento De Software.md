@@ -56,7 +56,7 @@
 
 **Desativar o pacote de tecnologia**
 
-OBS: recarregue o roteador usando o comando reload. Um recarregamento é exigido para tornar o pacote de software inativo.
+> Recarregue o roteador usando o comando reload. Um recarregamento é exigido para tornar o pacote de software inativo.
 
 ```
 (config)#license boot module [module-name] technology-package [package-name] disable
@@ -64,7 +64,7 @@ OBS: recarregue o roteador usando o comando reload. Um recarregamento é exigido
 
 **Remover a licença**
 
-OBS: apague o comando license boot module usado para desativar a licença ativa
+> Apague o comando license boot module usado para desativar a licença ativa
 
 ```
 #license clear [feature-name]
