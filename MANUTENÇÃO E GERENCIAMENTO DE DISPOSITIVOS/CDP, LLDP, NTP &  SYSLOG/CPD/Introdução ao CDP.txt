@@ -4,12 +4,11 @@ Resumo do CDP
     dispositivos CISCO que compartilham o mesmo enlace de dados.
 
     OBS: 
-
-        O CDP é independente de mídias e outros protocolos. É executado em todos dispositivos, como roteadores, switches e servidores
+        O CDP é independente de mídias e de outros protocolos. É executado em todos dispositivos, como roteadores, switches e servidores
         de acesso.
 
 NOTA:
 
     A maioria dos dispositivos de rede são conectados a outros dispositivos, assim, o CDP pode auxiliar nas decisões de projeto de rede,
-    solução de problemas e nas alterações do equipamento. Além de pode ser usado como ferramenta de descoberta de redes: detectar as informações sobre os dispositivos vizinhos
+    solução de problemas e nas alterações do equipamento. Além de pode ser usado como ferramenta de descoberta de redes: detectar as informações sob os dispositivos         vizinhos
    
