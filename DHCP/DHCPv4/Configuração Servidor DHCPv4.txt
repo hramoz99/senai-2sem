@@ -1,35 +1,35 @@
-ConfiguraÁ„o de um servidor DHCPv4 b·sico 
+Configura√ß√£o de um Servidor DHCPv4  
 
-Passo 1. Exclus„o de endereÁos IPv4
+	Passo 1. Exclus√£o de endere√ßos IPv4
 
-O roteador que funciona como servidor DHCPv4 atribui todos os endereÁos IPv4 de um pool de endereÁos DHCPv4, a menos que configurados para excluir endereÁos especÌficos. Normalmente, os endereÁos IPv4 em qualquer um pool s„o atribuÌdos a dispositivos de rede que exigem atribuiÁıes de endereÁo est·ticas. Portanto, esses endereÁos IPv4 n„o devem ser atribuÌdos a outros dispositivos. Para excluir endereÁos especÌficos, use o comando **ip dhcp excluded-address DHCP**.
+O roteador que funciona como servidor DHCPv4 atribui todos os endere√ßos IPv4 de um pool de endere√ßos DHCPv4, a menos que configurados para excluir endere√ßos. Normalmente, os endere√ßos IPv4 s√£o atribu√≠dos a dispositivos de rede que exigem atribui√ß√µes de endere√ßo est√°ticas. Portanto, esses endere√ßos IPv4 n√£o devem ser ligados a outros dispositivos. Para excluir endere√ßos espec√≠ficos, use o comando **ip dhcp excluded-address DHCP**.
 
-OBS: Um ˙nico endereÁo ou um intervalo de endereÁos podem ser excluÌdos especificando o endereÁo baixo e o endereÁo alto do intervalo. Os endereÁos excluÌdos devem incluir os endereÁos atribuÌdos a roteadores, servidores, impressoras e outros dispositivos que tenham sido ou ser„o configurados manualmente.
-
---------------------------------------------------------------------------------------------------------------------------
-
-Passo 2. ConfiguraÁ„o de um pool DHCPv4
-
-A configuraÁ„o de um servidor DHCPv4 envolve definir um pool de endereÁos para atribuir. O **pool IP DHCP** O comando 'pool-name' cria um pool com o nome especificado e coloca o roteador no modo de configuraÁ„o DHCPv4, que È identificado por este prompt 'Router(dhcp-config)#'.
+OBS: Um √∫nico endere√ßo ou um intervalo de endere√ßos podem ser exclu√≠dos especificando o endere√ßo baixo e o endere√ßo alto do intervalo. Os endere√ßos exclu√≠dos devem incluir os endere√ßos atribu√≠dos a roteadores, servidores, impressoras e outros dispositivos que tenham sido ou ser√£o configurados manualmente.
 
 --------------------------------------------------------------------------------------------------------------------------
 
-Passo 3. ConfiguraÁ„o de tarefas especÌficas
+	Passo 2. Configura√ß√£o de um pool DHCPv4
 
-- O pool de endereÁo e o roteador de gateway padr„o devem ser configurados. Use a instruÁ„o **network** para definir o intervalo de endereÁos disponÌveis.
+A configura√ß√£o de um servidor DHCPv4 envolve definir um intervalo de endere√ßos para atribuir o **pool IP DHCP**. O comando 'pool-name' cria um pool com o nome fixo e coloca o roteador no modo de configura√ß√£o DHCPv4, que √© identificado como'Router(dhcp-config)#'.
 
-- Use o comando **default-router** para definir o roteador de gateway padr„o. Geralmente, o gateway È a interface da LAN do roteador mais prÛximo aos dispositivos clientes.
+--------------------------------------------------------------------------------------------------------------------------
 
-	Um gateway È obrigatÛrio, mas 'vocÍ pode listar atÈ oito endereÁos se houver v·rios gateways'.
+	Passo 3. Configura√ß√£o de tarefas espec√≠ficas
 
-- Outros comandos do pool de DHCPv4 s„o opcionais. Por exemplo
+- O pool de endere√ßo e o roteador de gateway padr√£o devem ser configurados. Use a instru√ß√£o **network** para definir o intervalo de endere√ßos dispon√≠veis.
 
-	* O endereÁo IPv4 do servidor DNS que est· disponÌvel para um cliente DHCPv4 È configurado usando o comando **dns-		server**. 
+- Use o comando **default-router** para definir o roteador de gateway padr√£o. Geralmente, o gateway √© a interface da LAN do roteador mais pr√≥ximo aos dispositivos clientes.
 
-	* O comando **domain-name** 'domÌnio' È usado para definir o nome de domÌnio. 
+	Um gateway √© obrigat√≥rio, mas 'voc√™ pode listar at√© oito endere√ßos se houver v√°rios gateways'.
 
-	* A duraÁ„o do aluguel de DHCPv4 pode ser alterada usando o comando **lease**. 'O valor do aluguel padr„o È um 		dia'. 
+- Outros comandos do pool de DHCPv4 s√£o opcionais:
 
-	* O comando **netbios-name-server** È usado para definir o servidor NetBIOS WINS.
+	* O endere√ßo IPv4 do servidor DNS que est√° dispon√≠vel para um cliente DHCPv4 √© configurado usando o comando **dns-server**. 
+
+	* O comando **domain-name** 'dom√≠nio' √© usado para definir o nome de dom√≠nio. 
+
+	* A dura√ß√£o do aluguel de DHCPv4 pode ser alterada usando o comando **lease**. 'O valor do aluguel padr√£o √© um 	dia'. 
+
+	* O comando **netbios-name-server** √© usado para definir o servidor NetBIOS WINS.
 
 --------------------------------------------------------------------------------------------------------------------------
