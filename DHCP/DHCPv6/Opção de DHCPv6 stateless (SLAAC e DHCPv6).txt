@@ -1,14 +1,14 @@
-OpÁ„o de DHCPv6 stateless (SLAAC e DHCPv6)
+Op√ß√£o de DHCPv6 stateless (SLAAC e DHCPv6)
 
-A opÁ„o DHCPv6 stateless informa ao cliente para usar as informaÁıes na mensagem do RA para endereÁamento, mas par‚metros de configuraÁ„o adicionais est„o disponÌveis em um servidor DHCPv6.
+A op√ß√£o DHCPv6 stateless informa ao cliente para usar as informa√ß√µes da mensagem do RA para endere√ßamento. Par√¢metros de configura√ß√£o adicionais est√£o dispon√≠veis em um servidor DHCPv6.
 
-- O cliente se comunicar· com um servidor DHCPv6 stateless para obter informaÁıes adicionais n„o fornecidas na mensagem do RA. Esta pode ser uma lista de endereÁos IPv6 do servidor DNS, por exemplo. Este processo È conhecido como DHCPv6 stateless, porque o servidor n„o est· mantendo nenhuma informaÁ„o de estado do cliente (ou seja, uma lista de endereÁos IPv6 disponÌveis e alocadas). O servidor DHCPv6 stateless est· fornecendo somente par‚metros de configuraÁ„o para clientes, n„o endereÁos IPv6
+- O cliente se comunicar√° com um servidor DHCPv6 stateless para obter informa√ß√µes adicionais n√£o fornecidas na mensagem do RA. Esta pode ser uma lista de endere√ßos IPv6 do servidor DNS, por exemplo. Este processo √© conhecido como DHCPv6 stateless, porque o servidor n√£o est√° mantendo nenhuma informa√ß√£o de estado do cliente (ou seja, uma lista de endere√ßos IPv6 dispon√≠veis e alocadas). O servidor DHCPv6 stateless est√° fornecendo somente par√¢metros de configura√ß√£o para clientes, n√£o endere√ßos IPv6
 
-- Para o DHCPv6 independente, a flag O È definida como 1 e a flag M È mantida com a configuraÁ„o padr„o de 0. O valor de 1 da flag O È usado para informar ao cliente as informaÁıes de configuraÁ„o adicionais disponÌveis de um servidor DHCPv6 stateless.
+- Para o DHCPv6 independente, a flag O √© definida como 1 e a flag M √© mantida com a configura√ß√£o padr√£o de 0. O valor de 1 da flag O √© usado para informar ao cliente as informa√ß√µes de configura√ß√£o adicionais dispon√≠veis de um servidor DHCPv6 stateless.
 
 
 IMPORTANTE!!!
 
-Para modificar a mensagem do RA enviada na interface de um roteador para indicar o DHCPv6 stateless, use o comando a seguir:
+Para modificar a mensagem do RA enviada na interface de um roteador, use o comando a seguir:
 
 Router(config-if)# ipv6 nd other-config-flag
