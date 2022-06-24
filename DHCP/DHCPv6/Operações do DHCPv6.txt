@@ -1,15 +1,15 @@
-OperaÁıes do DHCPv6
+Opera√ß√µes do DHCPv6
 
-O DHCPv6 stateless ou stateful, ou ambos, comeÁam com uma mensagem de RA ICMPv6 do roteador. A mensagem do RA pode ter sido uma mensagem periÛdica ou solicitada pelo dispositivo usando uma mensagem de RS.
+O DHCPv6 stateless, stateful ou ambos, come√ßam com uma mensagem do RA ICMPv6 do roteador. A mensagem do RA pode ter sido uma mensagem peri√≥dica ou solicitada pelo dispositivo usando uma mensagem de RS.
 
-- Se o DHCPv6 stateful ou stateless for indicado na mensagem do RA, o dispositivo iniciar· as comunicaÁıes do cliente DHCPv6/servidor.
+- Se o DHCPv6 stateful ou stateless for indicado na mensagem do RA, o dispositivo iniciar√° as comunica√ß√µes do cliente DHCPv6/servidor.
 
-* As mensagens de DHCPv6 s„o enviadas no UDP.
+* As mensagens de DHCPv6 s√£o enviadas no UDP.
 
 	- Do servidor para o cliente = porta destino de UDP 546
 	- O cliente envia mensagens DHCPv6 para o servidor usando a porta destino de UDP 547
 
-Cliente DHCPv6 stateless - o cliente envia uma mensagem INFORMATION-REQUEST do DHCPv6 para o servidor DHCPv6 solicitando somente par‚metros de configuraÁ„o, como o endereÁo de servidor DNS. O cliente gera seu prÛprio endereÁo IPv6 usando o prefixo de mensagens do RA e uma identificaÁ„o de interface gerada automaticamente.
+Cliente DHCPv6 stateless - o cliente envia uma mensagem INFORMATION-REQUEST do DHCPv6 para o servidor DHCPv6 solicitando somente par√¢metros de configura√ß√£o, como o endere√ßo de servidor DNS. O cliente gera seu pr√≥prio endere√ßo IPv6 usando o prefixo de mensagens do RA e uma identifica√ß√£o de interface gerada automaticamente.
 
 
-Cliente de DHCPv6 Stateful - o cliente envia uma mensagem de REQUEST do DHCPv6 para o servidor para obter um endereÁo IPv6 e todos os par‚metros de configuraÁ„o restantes do servidor.
+Cliente de DHCPv6 Stateful - o cliente envia uma mensagem de REQUEST do DHCPv6 para o servidor para obter um endere√ßo IPv6 e todos os par√¢metros de configura√ß√£o restantes do servidor.
