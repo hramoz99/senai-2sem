@@ -2,9 +2,9 @@
 
 **Excluir endereços específicos**
 
-Exemplo:
+*Exemplo*
 
-(config)#ip dhcp excluded-address 192.168.10.1 192.168.10.9
+- (config)#ip dhcp excluded-address 192.168.10.1 192.168.10.9
 
 ```
 (config)#ip dhcp excluded-address [intervalo-entre-os-endereços-ip]
@@ -12,11 +12,11 @@ Exemplo:
 
 **Configuração de um pool DHCPv4**
 
-Exemplo: 
+*Exemplo* 
 
-(config)#ip dhcp pool LAN-POOL-1
+- (config)#ip dhcp pool LAN-POOL-1
 
-(dhcp-config)#
+- (dhcp-config)#
 
 ```
 (config)#ip dhcp pool [pool-name]
@@ -24,9 +24,9 @@ Exemplo:
 
 **Definir o pool de endereços**
 
-Exemplo: 
+*Exemplo* 
 
-(dhcp-config)#network 192.168.10.0 255.255.255.0
+- (dhcp-config)#network 192.168.10.0 255.255.255.0
 
 ```
 (dhcp-config)#network [network-number]
@@ -34,9 +34,9 @@ Exemplo:
 
 **Definir o roteador ou gateway padrão**
 
-Exemplo: 
+*Exemplo* 
 
-(dhcp-config)#default-router 192.168.10.1
+- (dhcp-config)#default-router 192.168.10.1
 
 ```
 (dhcp-config)#default-router [endereço-ip]
@@ -54,9 +54,9 @@ Exemplo:
 
 **Definir o nome de domímio**
 
-Exemplo:
+*Exemplo*
 
-(dhcp-config)#domain-name example.com
+- (dhcp-config)#domain-name example.com
 
 ```
 (dhcp-config)#domain-name [nome-de-domínio]
@@ -76,7 +76,7 @@ Exemplo:
 
 **Desativar / Reativar o DHCPv4**
 
-OBS: O serviço DHCPv4 fica ativado por padrão.
+> O serviço DHCPv4 fica ativado por padrão.
 
 ```
 (config)#no service dhcp (desativar)
@@ -86,13 +86,13 @@ ou
 
 **Solicitação de um servidor DHCPv4 que esteja em uma outra sub-rede / RETRANSMISSÃO**
 
-OBS: Esse comando será atrelado na interface do roteador que receberá o broadcast de solicitação de endereço IPv4 de um determinado host
+> Esse comando será atrelado na interface do roteador que receberá o broadcast de solicitação de endereço IPv4 de um determinado host
 
-Exemplo:
+*Exemplo*
 
-(config)#int g0/1
+- (config)#int g0/1
 
-(config-if)#ip helper-address 192.168.11.6
+- (config-if)#ip helper-address 192.168.11.6
 
 ```
 (config-if)#ip helper-address [endereço-ip-do-servidor-de-DHCPv4-em-uma-outra-subrede]
@@ -100,7 +100,7 @@ Exemplo:
 
 **Configuração de um roteador como cliente DHCP**
 
-OBS: Essa configuração será atrelada na interface de um roteador SOHO conectada à um roteador ISP
+> Essa configuração será atrelada na interface de um roteador SOHO conectada à um roteador ISP
 
 ```
 (config-if)#ip address dhcp
