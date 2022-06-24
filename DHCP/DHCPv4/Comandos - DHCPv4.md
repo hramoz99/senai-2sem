@@ -118,7 +118,7 @@ ou
 #show ip dhcp binding
 ```
 
-**Exibir informações sobre a quantidade de mensagens DHCPv4 que foram enviadas e recebidas**
+**Exibir informações sobre as mensagens DHCPv4 que foram enviadas e recebidas**
 
 ```
 #show ip dhcp server statistics
@@ -130,7 +130,7 @@ ou
 #show ip dhcp conflict
 ```
 
-**Reportar eventos de servidor, como atribuições de endereço e atualizações de banco de dados**
+**Reportar eventos de servidor - Atribuições de endereço | Atualizações de Banco de Dados**
 
 ```
 #debug ip dhcp server events
