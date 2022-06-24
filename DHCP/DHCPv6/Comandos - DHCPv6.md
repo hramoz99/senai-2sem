@@ -8,9 +8,9 @@
 
 **Configurar um pool de DHCPv6**
 
-Exemplo: 
+*Exemplo*
 
-(config)#ipv6 dhcp pool IPV6-STATELESS
+- (config)#ipv6 dhcp pool IPV6-STATELESS
 
 ```
 (config)#ipv6 dhcp pool [pool-name]
@@ -19,13 +19,13 @@ Exemplo:
 
 **Configurar os parâmetros do pool**
 
-Exemplo:
+*Exemplo*
 
-(config-dhcpv6)#address prefix 2001:db8:cafe:1::/64 lifetime infinite
+- (config-dhcpv6)#address prefix 2001:db8:cafe:1::/64 lifetime infinite
 
-(config-dhcpv6)#dns-server 2001:db8:cafe:1:aaaa:5
+- (config-dhcpv6)#dns-server 2001:db8:cafe:1:aaaa:5
 
-(config-dhcpv6)#domain-name example.com
+- (config-dhcpv6)#domain-name example.com
 
 ```
 (config-dhcpv6)#address prefix [endereço-ip-e-máscara] {[lifetime [valid-lifetime or preferred-lifetime | infinite]}
@@ -42,9 +42,9 @@ Exemplo:
 (config-if)#[nesta-etapa-devemos-especificar-o-modo-de-operação-que-o-roteador-irá-trabalhar]
 ```
 
-**Restaurar as flag M e O para seus valores iniciais de 0 - SLAAC padrão**
+**Restaurar as flag M e O para seus valores iniciais - SLAAC padrão**
 
-OBS: As mensagens de RA são configuradas em uma interface individual de um roteador.
+> As mensagens de RA são configuradas em uma interface individual de um roteador.
 
 ```
 (config-if)# no ipv6 nd managed-config-flag [flag-M-restaurada]
@@ -53,7 +53,7 @@ OBS: As mensagens de RA são configuradas em uma interface individual de um rote
 
 **Utilizar DHCPv6 Stateless**
 
-OBS: Flag M = 0; Flag O = 1
+> Flag M = 0 | Flag O = 1
 
 ```
 (config-if)# ipv6 nd other-config-flag
@@ -61,7 +61,7 @@ OBS: Flag M = 0; Flag O = 1
 
 **Utilizar DHCPv6 Stateful**
 
-OBS: Flag M = 1; Flag O = não está envolvida
+> Flag M = 1 | Flag O = não está envolvida
 
 ```
 (config-if)#ipv6 nd managed-config-flag
@@ -69,7 +69,7 @@ OBS: Flag M = 1; Flag O = não está envolvida
 
 **Configuração de um roteador como cliente de SLAAC ou DHCPv6 stateless**
 
-OBS: Este não é um cenário típico e é usado somente para fins de demonstração.
+> Usado somente para demonstração.
 
 ```
 (config)#int [id-da-interface]
@@ -79,7 +79,7 @@ OBS: Este não é um cenário típico e é usado somente para fins de demonstra�
 
 **Configuração de um roteador como cliente de DHCPv6 Stateful**
 
-OBS: Essa configuração será atrelada na interface de um roteador SOHO conectada à um roteador ISP
+> Configuração atrelada na interface de um roteador SOHO conectada à um roteador ISP
 
 ```
 (config)#int [id-da-interface]
@@ -88,7 +88,7 @@ OBS: Essa configuração será atrelada na interface de um roteador SOHO conecta
 
 **Configuração de um roteador como um agente de retransmissão de DHCPv6**
 
-OBS: Esse comando é configurado na interface voltada para o cliente usando o endereço do servidor DHCPv6 como destino.
+> Comando configurado na interface cliente usando o endereço do servidor DHCPv6 como destino.
 
 ```
 (config)#int [id-da-interface]
