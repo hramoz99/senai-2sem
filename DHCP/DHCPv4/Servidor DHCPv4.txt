@@ -1,8 +1,8 @@
-Introdução ao DHCPv4
+IntroduÃ§Ã£o ao DHCPv4
 
-O DHCPv4 atribui endereços IPv4 e outras informações de configuração de rede dinamicamente. Como os clientes desktop geralmente constituem a grande maioria dos nós de uma rede, o DHCPv4 é uma ferramenta extremamente útil para poupar o tempo dos administradores da rede.
+O DHCPv4 atribui endereÃ§os IPv4 e outras informaÃ§Ãµes de configuraÃ§Ã£o de rede dinamicamente. Como os clientes desktop geralmente constituem a grande maioria dos nÃ³s de uma rede, o DHCPv4 Ã© uma ferramenta extremamente Ãºtil para poupar o tempo dos administradores da rede.
 
-OBS: Os clientes alugam as informações do servidor por um período definido administrativamente. Os administradores configuram os servidores DHCPv4 para definir os aluguéis para expirarem em intervalos diferentes. O aluguel ocorre normalmente de 24 horas a uma semana ou mais. Quando o aluguel expira, o cliente precisa pedir outro endereço, embora geralmente receba novamente o mesmo endereço.
+OBS: Os clientes alugam as informaÃ§Ãµes do servidor por um perÃ­odo definido. Os administradores configuram os servidores DHCPv4 para definir os aluguÃ©is para expirarem em intervalos diferentes. O aluguel ocorre normalmente de 24 horas a uma semana ou mais. Quando o aluguel expira, o cliente precisa pedir outro endereÃ§o, embora geralmente receba novamente o mesmo endereÃ§o.
 
 CURIOSIDADE: O software Cisco IOS oferece suporte a um servidor DHCPv4 adicional, completo.
 
