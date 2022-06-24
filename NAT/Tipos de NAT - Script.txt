@@ -1,6 +1,9 @@
 ROTEADOR EMPRESA ACME
 
-configuracao das portas de entrada/saida junto com a associação do pool com as permissões
+Configuração das portas de entrada/saida junto com a associação do pool com as permissões;
+
+* - Comando para limpar os endereços antigos do NAT
+    clear ip nat translation
 
 NAT DINÂMICA
 
@@ -15,9 +18,6 @@ exit
 ip nat pool intervalo-1P-WAN 200.0.0.101 200.0.0.110 netmask 255.255.255.0
 ip nat inside source list LAN_AMB1 pool intervalo-1P-WAN
 exit
-
-comando para limpar os endereços antigos do NAT
-clear ip nat translation
 
 NAT PAT
 
