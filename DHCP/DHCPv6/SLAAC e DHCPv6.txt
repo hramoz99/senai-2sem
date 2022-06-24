@@ -1,14 +1,14 @@
 SLAAC e DHCPv6
 
-Decidir se um cliente está configurado para obter as informações de endereço IPv6 automaticamente usando SLAAC, DHCPv6 ou uma combinação de ambos depende das configurações na mensagem do RA.
+ConfiguraÃ§Ãµes para o cliente obter as informaÃ§Ãµes de endereÃ§o IPv6 automaticamente utilizando SLAAC, DHCPv6 ou uma combinaÃ§Ã£o dos dois, depende das configuraÃ§Ãµes da mensagem do RA.
 
-* As duas flags são a flag de Configuração de Endereço Gerenciado (Flag M) e a Outra Configuração (flag O).
+* As duas flags sÃ£o: ConfiguraÃ§Ã£o de EndereÃ§o Gerenciado (Flag M) e ConfiguraÃ§Ã£o (flag O).
 
-Usando combinações diferentes de flags M e O, as mensagens de RA têm uma das três opções de endereçamento para o dispositivo IPv6:
+Usando combinaÃ§Ãµes diferentes, as mensagens de RA tÃªm trÃªs opÃ§Ãµes de endereÃ§amento para o dispositivo IPv6:
 
-- SLAAC (somente anúncio de roteador / padrão)
+- SLAAC (somente anÃºncio de roteador / padrÃ£o)
 - DHCPv6 stateless (SLAAC e DHCPv6)
 - DHCPv6 Stateful (DHCPv6 apenas)
 
-Não importa a opção usada, é recomendável pelo RFC 4861 que todos os dispositivos IPv6 executem a **detecção duplicada (DAD)** de endereço em qualquer endereço unicast, incluindo endereçamento configurado usando SLAAC ou DHCPv6. O DAD é implementado usando o ICMPv6, que é especificado pelo RFC 4443.
+NÃ£o importa a opÃ§Ã£o usada, Ã© recomendÃ¡vel pelo RFC 4861 que todos os dispositivos IPv6 executem a **detecÃ§Ã£o duplicada (DAD)** de endereÃ§o em qualquer endereÃ§o unicast, incluindo endereÃ§amento configurado usando SLAAC ou DHCPv6. O DAD Ã© implementado usando o ICMPv6, que Ã© especificado pelo RFC 4443.
 
