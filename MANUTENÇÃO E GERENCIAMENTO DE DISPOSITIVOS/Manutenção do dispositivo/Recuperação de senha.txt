@@ -1,4 +1,4 @@
-Recuperação de senha
+Recuperação de Senha
 
     As senhas dos dispositivos são usadas para impedir acesso não autorizado. As senhas criptografadas, como as senhas secretas de ativação, 
     devem ser substituídas após a recuperação. Dependendo do dispositivo, o procedimento detalhado de recuperação de senha vai variar; 
@@ -23,7 +23,7 @@ Acesso ao console do dispositivo
     - 1 bit de parada;
     - Sem fluxo de controle.
 
-    Com o acesso ao console, o usuário pode acessar o modo ROMMON, usando uma sequência de interrupção durante o processo de inicialização ou 
+    Com o acesso ao console, o usuário pode acessar o modo ROMMON usando uma sequência de interrupção durante o processo de inicialização ou 
     removendo a memória flash externa quando o dispositivo estiver desligado.
 
     OBS: a sequência de interrupção de PuTTY é Ctrl+Break (http://www.cisco.com/c/en/us/support/docs/routers/10000-series-routers/12818-61.html)
