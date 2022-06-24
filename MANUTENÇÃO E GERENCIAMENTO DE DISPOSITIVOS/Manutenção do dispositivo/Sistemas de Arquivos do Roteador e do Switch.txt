@@ -1,6 +1,6 @@
 Sistemas de Arquivos do Roteador
 
-    O Cisco IOS File System (IFS) permite que o administrador navegue em diferentes diretórios e liste os arquivos em um diretório, além de 
+    O Cisco IOS File System (IFS) permite que o administrador navegue em diferentes diretórios e liste os arquivos em uma pasta, além de 
     criar subdiretórios em memória flash ou em um disco. Os diretórios disponíveis variam de acordo com o dispositivo.
 
     Permissões nos diretórios (mostradas na coluna Flag da saída do comando --> sh file systems)
