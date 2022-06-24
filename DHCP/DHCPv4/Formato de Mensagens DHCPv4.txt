@@ -1,53 +1,53 @@
-Formato de mensagens DHCPv4
+Formato de Mensagens DHCPv4
 
-- As mensagens DHCPv4 s„o encapsuladas no protocolo de transporte UDP.
+- As mensagens DHCPv4 s√£o encapsuladas no protocolo de transporte UDP.
 
 - As mensagens de DHCPv4 enviadas do cliente usam a porta origem 68 e a porta destino 67 do UDP. 
 
 - As mensagens de DHCPv4 enviadas do servidor ao cliente usam a porta origem 67 e a porta destino 68 do UDP.
 
-* CÛdigo da operaÁ„o (OP) 
+<> C√≥digo da opera√ß√£o (OP) 
 
 	Especifica o tipo geral da mensagem. 
-	- Um valor igual a 1 indica uma mensagem de solicitaÁ„o; 
-	- Um valor de 2 È uma mensagem de resposta
+	- Um valor igual a 1 indica uma mensagem de solicita√ß√£o; 
+	- Um valor de 2 √© uma mensagem de resposta
 
-* Tipo de hardware 
+<> Tipo de hardware 
 
 	Identifica o tipo de hardware usado na rede.
-	- 1 È Ethernet
-	- 15 È Frame Relay
-	- 20 È uma linha serial
-	OBS: Esses s„o os mesmos cÛdigos utilizados em mensagens ARP
+	- 1 √© Ethernet
+	- 15 √© Frame Relay
+	- 20 √© uma linha serial
+	OBS: Esses s√£o os mesmos c√≥digos utilizados em mensagens ARP
 
-* Comprimento do endereÁo de hardware - especifica o comprimento do endereÁo
+* Comprimento do endere√ßo de hardware - especifica o comprimento do endere√ßo
 
-* Saltos - controla o encaminhamento de mensagens. Defina como 0 por um cliente antes de enviar uma solicitaÁ„o.
-
---------------------------------------------------------------------------------------------------------------------------
-
-* Identificador de transaÁ„o - usado pelo cliente para corresponder ‡ solicitaÁ„o com as respostas recebidas de servidor DHCPv4
+* Saltos - controla o encaminhamento de mensagens. Defina como 0 por um cliente antes de enviar uma solicita√ß√£o.
 
 --------------------------------------------------------------------------------------------------------------------------
 
-* Segundos - identifica o n˙mero de segundos decorridos desde que um cliente comeÁou a tentar adquirir ou renovar um aluguel. Usado pelos servidores DHCPv4 para priorizar respostas quando as solicitaÁıes do cliente s„o excepcionais.
-
-* Flags - usados por um cliente que n„o sabe seu endereÁo IPv4 quando envia uma solicitaÁ„o. Apenas um dos 16 bits È usado, que È a flag de broadcast. Um valor de 1 neste campo informa ao agente de servidor ou retransmiss„o de DHCPv4 que recebe a solicitaÁ„o que a resposta deve ser enviada como broadcast.
+* Identificador de transa√ß√£o - usado pelo cliente para corresponder √† solicita√ß√£o com as respostas recebidas de servidor DHCPv4
 
 --------------------------------------------------------------------------------------------------------------------------
 
-* EndereÁo IP do cliente - usado por um cliente durante a atualizaÁ„o de aluguel quando o endereÁo do cliente È v·lido e ˙til, n„o durante o processo de aquisiÁ„o de um endereÁo. O cliente coloca seu prÛprio endereÁo IPv4 nesse campo se, e apenas se, tiver um endereÁo IPv4 v·lido no estado limitado; caso contr·rio, define o campo como 0.
+* Segundos - identifica o n√∫mero de segundos decorridos desde que um cliente come√ßou a tentar adquirir ou renovar um aluguel. Usado pelos servidores DHCPv4 para priorizar respostas quando as solicita√ß√µes do cliente s√£o excepcionais.
 
-* Seu endereÁo IP - usado pelo servidor para atribuir endereÁos IPv4 ao cliente.
+* Flags - usados por um cliente que n√£o sabe seu endere√ßo IPv4 quando envia uma solicita√ß√£o. Apenas um dos 16 bits √© usado, que √© a flag de broadcast. Um valor de 1 neste campo informa ao agente de servidor ou retransmiss√£o de DHCPv4 que recebe a solicita√ß√£o que a resposta deve ser enviada como broadcast.
 
-* EndereÁo IP do servidor - usado pelo servidor para identificar o endereÁo do servidor que o cliente deve usar para a prÛxima etapa no processo de inicializaÁ„o, que pode ou n„o ser o servidor enviando essa resposta. O servidor de envio sempre inclui seu prÛprio endereÁo IPv4 em um campo especial chamado opÁ„o DHCPv4 do Identificador do Servidor.
+--------------------------------------------------------------------------------------------------------------------------
 
-* EndereÁo IP do gateway - mensagens das rotas DHCPv4 em que os agentes de retransmiss„o DHCPv4 s„o envolvidos. O endereÁo de gateway facilita comunicaÁıes de solicitaÁıes de DHCPv4 e responde entre o cliente e um servidor que est„o em sub-redes ou em redes diferentes.
+* Endere√ßo IP do cliente - usado por um cliente durante a atualiza√ß√£o de aluguel quando o endere√ßo do cliente √© v√°lido e √∫til, n√£o durante o processo de aquisi√ß√£o de um endere√ßo. O cliente coloca seu pr√≥prio endere√ßo IPv4 nesse campo se, e apenas se, tiver um endere√ßo IPv4 v√°lido no estado limitado; caso contr√°rio, define o campo como 0.
 
-* EndereÁo de hardware do cliente - especifica a camada fÌsica do cliente.
+* Seu endere√ßo IP - usado pelo servidor para atribuir endere√ßos IPv4 ao cliente.
 
-* Nome do servidor - usado pelo servidor que est· enviando uma mensagem DHCPOFFER ou DHCPACK. O servidor tambÈm pode colocar seu nome nesse campo. Isso pode ser um apelido de texto simples ou um nome de domÌnio DNS, como dhcpserver.netacad.net.
+* Endere√ßo IP do servidor - usado pelo servidor para identificar o endere√ßo do servidor que o cliente deve usar para a pr√≥xima etapa no processo de inicializa√ß√£o, que pode ou n√£o ser o servidor enviando essa resposta. O servidor de envio sempre inclui seu pr√≥prio endere√ßo IPv4 em um campo especial chamado op√ß√£o DHCPv4 do Identificador do Servidor.
 
-* Nome de arquivo de inicializaÁ„o - usado opcionalmente por um cliente para solicitar um determinado tipo de arquivo de inicializaÁ„o em uma mensagem DHCPDISCOVER. Usado por um servidor em um DHCPOFFER para especificar um diretÛrio e nome do arquivo de inicializaÁ„o.
+* Endere√ßo IP do gateway - mensagens das rotas DHCPv4 em que os agentes de retransmiss√£o DHCPv4 s√£o envolvidos. O endere√ßo de gateway facilita comunica√ß√µes de solicita√ß√µes de DHCPv4 e responde entre o cliente e um servidor que est√£o em sub-redes ou em redes diferentes.
 
-* OpÁıes de DHCP - retÈm as opÁıes de DHCP, incluindo v·rios par‚metros necess·rios para a operaÁ„o b·sica do DHCP. Este campo tem comprimento vari·vel. O cliente e o servidor podem usar esse campo
+* Endere√ßo de hardware do cliente - especifica a camada f√≠sica do cliente.
+
+* Nome do servidor - usado pelo servidor que est√° enviando uma mensagem DHCPOFFER ou DHCPACK. O servidor tamb√©m pode colocar seu nome nesse campo. Isso pode ser um apelido de texto simples ou um nome de dom√≠nio DNS, como dhcpserver.netacad.net.
+
+* Nome de arquivo de inicializa√ß√£o - usado opcionalmente por um cliente para solicitar um determinado tipo de arquivo de inicializa√ß√£o em uma mensagem DHCPDISCOVER. Usado por um servidor em um DHCPOFFER para especificar um diret√≥rio e nome do arquivo de inicializa√ß√£o.
+
+* Op√ß√µes de DHCP - ret√©m as op√ß√µes de DHCP, incluindo v√°rios par√¢metros necess√°rios para a opera√ß√£o b√°sica do DHCP. Este campo tem comprimento vari√°vel. O cliente e o servidor podem usar esse campo
