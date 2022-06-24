@@ -1,14 +1,14 @@
-Retransmiss„o DHCPv4
+Retransmiss√£o DHCPv4
 
-Configurar um endereÁo de ajuda do IOS Cisco - Essa soluÁ„o permite que um roteador reenvie os broadcasts de DHCPv4 para o servidor DHCPv4. Quando o roteador encaminha uma designaÁ„o de endereÁo/solicitaÁıes do par‚metro, est· atuando como um agente de retransmiss„o de DHCPv4.
+Configurar um endere√ßo de ajuda do IOS Cisco - Essa solu√ß√£o permite que um roteador reenvie os broadcasts de DHCPv4 para o servidor DHCPv4. Quando o roteador encaminha uma designa√ß√£o de endere√ßo/solicita√ß√µes do par√¢metro, est√° atuando como um agente de retransmiss√£o de DHCPv4.
 
-Comando atrelado na interface que receber· o broadcast
+Comando atrelado na interface que receber√° o broadcast
 
-(config)#ip helper-address [endereÁo-ip-do-servidor-de-DHCPv4-em-uma-outra-subrede]
+-> (config)#ip helper-address [endere√ßo-ip-do-servidor-de-DHCPv4-em-uma-outra-subrede]
 
 CURIOSIDADE
 
-O DHCPv4 n„o È o ˙nico serviÁo no qual o roteador pode ser configurado para retransmitir. Por padr„o, o comando ip helper-address encaminha os seguintes oito serviÁos UDP:
+O DHCPv4 n√£o √© o √∫nico servi√ßo no qual o roteador pode ser configurado para retransmitir. Por padr√£o, o comando ip helper-address encaminha os seguintes oito servi√ßos UDP:
 
 Porta 37: tempo
 Porta 49: TACACS
@@ -16,5 +16,5 @@ Porta 53: DNS
 Porta 67: servidor de DHCP/BOOTP
 Porta 68: cliente de DHCP/BOOTP
 Porta 69: TFTP
-Porta 137: serviÁo de nomes NetBIOS
-Porta 138: serviÁo de conjunto de dados NetBIOS
+Porta 137: servi√ßo de nomes NetBIOS
+Porta 138: servi√ßo de conjunto de dados NetBIOS
