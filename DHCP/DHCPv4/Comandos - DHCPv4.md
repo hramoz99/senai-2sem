@@ -44,7 +44,7 @@
 
 **Definir um servidor DNS**
 
-Exemplo:
+*Exemplo*
 
 (dhcp-config)#dns-server 192.168.11.5
 
