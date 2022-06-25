@@ -13,9 +13,9 @@ Capítulo 9: NAT para IPv4
 
         - Características do NAT, terminologia e operações gerais
         
-        - Os tipos diferentes de NAT - NAT estático, NAT dinâmico e PAT.
+        - Tipos diferentes de NAT - NAT estático, NAT dinâmico e PAT.
         
-        - As vantagens e desvantagens do NAT
+        - Vantagens e desvantagens do NAT
         
         - Configuração, verificação e análise de NAT estático, NAT dinâmico e PAT.
         
@@ -23,4 +23,4 @@ Capítulo 9: NAT para IPv4
         
         - Por que o NAT está disponível, mas não totalmente à rede IPv6
         
-        - A solução de problemas de NAT usando os comandos show e debug
+        - Solução de problemas de NAT usando os comandos show e debug
