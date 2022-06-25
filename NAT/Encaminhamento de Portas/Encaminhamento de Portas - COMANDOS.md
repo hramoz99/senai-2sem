@@ -1,9 +1,9 @@
 ## ENCAMINHAMENTO DE PORTA
 
 #### Iniciar comunicação ESTÁTICA entre um endereço local interno e uma porta local com um endereço global interno e a porta global
-Ex: 
 
-(config)#ip nat inside source static tcp 192.168.10.254 80 209.165.200.225 8080
+*Exemplo*
+- (config)#ip nat inside source static tcp 192.168.10.254 80 209.165.200.225 8080
 
 ```
 (config)#ip nat inside source [static (tcp or udp)] [ip-local-interno] [porta-local] [ip-global-interno] [porta-global]
