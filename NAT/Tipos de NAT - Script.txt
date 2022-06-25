@@ -2,8 +2,8 @@ ROTEADOR EMPRESA ACME
 
 Configuração das portas de entrada/saida junto com a associação do pool com as permissões;
 
-* - Comando para limpar os endereços antigos do NAT
-    clear ip nat translation
+* Comando para limpar os endereços antigos do NAT
+  clear ip nat translation
 
 NAT DINÂMICA
 
