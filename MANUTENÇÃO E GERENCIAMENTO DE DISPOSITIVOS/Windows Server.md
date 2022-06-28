@@ -1,42 +1,42 @@
 # Parâmetros - Windows Server
 
 
-## Acessar o servidor via RDP (Conexão de Área de Trabalho Remota)
+**Acessar o servidor via RDP (Conexão de Área de Trabalho Remota)**
 ```
 User: .\[nome-do-usuário]
 User: [domínio]\[nome-do-usuário]
 ```
 
-## Informações "gerais" do seu servidor
+**Informações "gerais" do seu servidor**
 ```
 Windows + PauseBreak
 ```
 
-## Mudar o nome do servidor
+**Mudar o nome do servidor**
 ```
 Windows + R
     digite sysdm.cpl
 ```
 
-## Informações de rede em seu servidor
+**Informações de rede em seu servidor**
 ```
 Windows + R
     digite ncpa.cpl
 ```
 
-## Acessar GPO
+**Acessar GPO**
 ```
 Windows + R
     digite secpol.msc
 ```
 
-## Acessar gerenciamento de disco
+**Acessar gerenciamento de disco**
 ```
 Windows + R
     digite diskmgmt.msc
 ```
 
-## Acessar pasta compartilhada
+## Acessar pasta compartilhada**
 ```
 Abra o Explorador de Arquivos
     
@@ -46,19 +46,19 @@ Abra o Explorador de Arquivos
 
 ```
 
-## "Caminho" do arquivo 'hosts'
+**Caminho" do arquivo 'hosts**
 ```
 Windows + R
     digite C:\Windows\System32\drivers\etc\hosts
 ```
 
-## Gerenciador de DNS
+**Gerenciador de DNS**
 ```
 Windows + R
     digite dnsmgmt.msc
 ```
 
-## ISS - Serviços de Informações da internet
+**ISS - Serviços de Informações da internet**
 ```
 Windows + R
     digite InetMgr.exe
