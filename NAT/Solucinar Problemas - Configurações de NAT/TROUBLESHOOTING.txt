@@ -2,9 +2,9 @@ TROUBLESHOOTING (9.3.1.4)
 
 As interfaces NAT 'inside' e 'outside' estão posicionadas de maneira incorreta
 
-SOLUÇÃO (Aplicadas em R2)
+SOLUÇÃO 
 
-!Apagar o erro
+# Apagar o erro
 en
 conf t
 int s0/0/0
@@ -13,7 +13,7 @@ int s0/0/1
 no ip nat outside
 exit
 
-!Correção
+# Correção
 int s0/0/0
 ip nat outside
 int s0/0/1
@@ -26,10 +26,10 @@ Máscara da ACL 101 está incorreta
 
 SOLUÇÃO
 
-!Apagar o erro
+# Apagar o erro
 no access-list 101
 
-!Correção
+# Correção
 access-list 101 permit ip 10.4.10.0 0.0.1.255 any
 
 ou 
