@@ -1,6 +1,6 @@
 Configuração do NAT - DINÂMICO
 
-    - O NAT dinâmico requer a configuração de interfaces internas e externas. No entanto, o NAT estático cria um mapa permanente para um único endereço, o NAT dinâmico     usa um pool de endereços.
+    - O NAT Dinâmico requer a configuração de interfaces internas e externas. No entanto, o NAT estático cria um mapa permanente para um único endereço, o NAT dinâmico     usa um pool de endereços.
 
     Pool de endereços IPv4 públicos 209.165.200.226 a 209.165.200.240.
 
