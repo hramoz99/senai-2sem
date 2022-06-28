@@ -1,13 +1,13 @@
 # Parâmetros - Windows Server
 
 
-**Acessar o servidor via RDP (Conexão de Área de Trabalho Remota)**
+**Acessar o servidor via RDP - Conexão de Área de Trabalho Remota**
 ```
 User: .\[nome-do-usuário]
 User: [domínio]\[nome-do-usuário]
 ```
 
-**Informações "gerais" do seu servidor**
+**Informações do seu servidor**
 ```
 Windows + PauseBreak
 ```
@@ -18,7 +18,7 @@ Windows + R
     digite sysdm.cpl
 ```
 
-**Informações de rede em seu servidor**
+**Informações de rede - servidor**
 ```
 Windows + R
     digite ncpa.cpl
