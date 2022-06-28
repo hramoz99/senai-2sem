@@ -1,12 +1,12 @@
 ## NAT - DINÂMICO
 
-**Definir um pool de endereços globais a serem usados para conversão**
+> Definir um pool de endereços globais a serem usados para conversão
 
-OBS: Os endereços são definidos pela indicação do endereço IPv4 inicial e endereço IPv4 final do pool.
+**Os endereços são definidos pela indicação do endereço IPv4 inicial e endereço IPv4 final do pool.**
 
-Exemplo: 
+*Exemplo*
 
-(config)#ip nat pool NAT-POOL1 209.165.200.226 209.165.200.240 netmask 255.255.255.224
+- (config)#ip nat pool NAT-POOL1 209.165.200.226 209.165.200.240 netmask 255.255.255.224
 
 ```
 (config)#ip nat pool [name] [primeiro-ip-da-rede] [ultimo-ip-da-rede] netmask [máscara]
@@ -14,9 +14,9 @@ Exemplo:
 
 **Configurar uma ACL padrão para permitir os endereços que devem ser convertidos**
 
-Exemplo: 
+*Exemplo*
 
-(config)#access-list 1 permit 192.168.0.0 0.0.255.255
+- (config)#access-list 1 permit 192.168.0.0 0.0.255.255
 
 ```
 (config)#access-list [1-99] [deny or permit] [endereço-ip] [wildcard]
@@ -24,9 +24,9 @@ Exemplo:
 
 **Estabelecer a conversão dinâmica de origem, especificando a lista de acesso e o pool**
 
-Exemplo: 
+*Exemplo* 
 
-(config)#ip nat inside source list 1 pool NAT-POOL1
+- (config)#ip nat inside source list 1 pool NAT-POOL1
 
 ```
 (config)#ip nat inside source list [número-da-acl] pool [name]
@@ -69,7 +69,7 @@ Exemplo:
 #clear ip nat translation *
 ```
 
-**Verificar a operação do recurso NAT, exibindo informações sobre cada pacote que está sendo convertido pelo roteador**
+**Verificar a operação do recurso NAT exibindo as informações sobre cada pacote que está sendo convertido pelo roteador**
 
 ```
 #debug ip nat
