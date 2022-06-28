@@ -1,20 +1,20 @@
 SCRIPT - Exercício 9.2.2.5 
 
-!R2
+# R2
 !Entrar no modo de configuração global
 en
 conf t
 
-!Pool de endereços
+# Pool de endereços
 ip nat pool NAT 209.165.76.196 209.165.76.199 netmask 255.255.255.252
 
-!ACL
+# ACL
 access-list 1 permit 172.16.0.0 0.0.255.255
 
-!Conversão - dinâmica
+# Conversão - dinâmica
 ip nat inside source list 1 pool NAT
 
-!Interfaces NAT
+# Interfaces NAT
 int s0/0/1
 ip nat inside
 exit
