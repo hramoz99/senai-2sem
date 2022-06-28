@@ -1,14 +1,14 @@
-SCRIPT - ExercÌcio 9.2.1.4
+SCRIPT - Exerc√≠cio 9.2.1.4
 
-!R1
-!Entrar no modo de configuraÁ„o global
+# R1
+!Entrar no modo de configura√ß√£o global
 en
 conf t
 
-!Convers„o de NAT
+# Convers√£o de NAT
 ip nat inside source static 172.16.16.1 64.100.50.1
 
-!Interfaces internas e externas
+# Interfaces Internas e Externas
 int g0/0
 ip nat inside
 exit
