@@ -1,6 +1,5 @@
 # Parâmetros - Windows Server
 
-Esse são os comandos utilizados para a configuração.
 
 ## Acessar o servidor via RDP (Conexão de Área de Trabalho Remota)
 ```
