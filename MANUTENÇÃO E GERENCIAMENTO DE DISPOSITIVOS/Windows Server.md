@@ -36,7 +36,7 @@ Windows + R
     digite diskmgmt.msc
 ```
 
-**Acessar pasta compartilhada**
+## Acessar pasta compartilhada
 ```
 Abra o Explorador de Arquivos
     
