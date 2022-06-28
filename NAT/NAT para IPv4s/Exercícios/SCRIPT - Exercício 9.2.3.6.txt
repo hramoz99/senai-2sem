@@ -32,5 +32,5 @@ int s0/1/0
 ip nat outside
 exit
 
-# Conversão de NAT estatico (para mapear o endereço interno local.pka para seu endereço externo)
+# Conversão de NAT Estatico - mapear o endereço interno local.pka para seu endereço externo
 ip nat inside source static 192.168.20.254 209.165.202.130
