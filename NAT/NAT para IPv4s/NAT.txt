@@ -1,6 +1,6 @@
 O que é o NAT?
 
-    O NAT tem várias utilidades, mas seu principal uso é conservar endereços IPv4 públicos. Ele faz isso permitindo que as redes usem endereços
+    O NAT tem várias utilidades, mas seu principal uso é conservar endereços IPv4 públicos, permitindo que as redes usem endereços
     IPv4 privados internamente e fornecendo conversão para um endereço público somente quando necessário.
 
     - O NAT tem um benefício a mais de adicionar um grau de privacidade e segurança a uma rede, porque oculta os endereços IPv4 internos de 
