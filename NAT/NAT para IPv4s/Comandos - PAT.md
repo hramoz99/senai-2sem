@@ -2,31 +2,16 @@
 
 **Definir um pool de endereços globais a serem usados para conversão de sobrecarga**
 
-OBS: Os endereços são definidos pela indicação do endereço IPv4 inicial e endereço IPv4 final do pool.
-
-Exemplo: 
-
-(config)#ip nat pool NAT-POOL2 209.165.200.226 209.165.200.240 netmask 255.255.255.224
-
 ```
 (config)#ip nat pool [name] [intervalo-de-IPs] netmask [máscara]
 ```
 
 **Configurar uma ACL padrão para permitir os endereços que devem ser convertidos**
-
-Exemplo: 
-
-(config)#access-list 1 permit 192.168.0.0 0.0.255.255
-
 ```
 (config)#access-list [1-99] [deny or permit] [endereço-ip] [wildcard]
 ```
 
 **Estabelecer a conversão de sobrecarga, especificando a lista de acesso e o pool**
-
-Exemplo: 
-
-(config)#ip nat inside source list 1 pool NAT-POOL2 overload
 
 ```
 (config)#ip nat inside source list [número-da-acl] pool [name] overload
@@ -67,19 +52,11 @@ Exemplo:
 
 **Configurar uma ACL padrão para permitir os endereços que devem ser convertidos**
 
-Exemplo: 
-
-(config)#access-list 1 permit 192.168.0.0 0.0.255.255
-
 ```
 (config)#access-list [1-99] [deny or permit] [endereço-ip] [wildcard]
 ```
 
 **Estabelecer a conversão dinâmica de origem, especificando as opções de ACL, interface de saída e sobrecarga**
-
-Exemplo:
-
-(config)#ip nat inside source list 1 interface serial 0/1/0 overload
 
 ```
 (config)#ip nat inside source list [1-99] interface [id-da-interface] overload
