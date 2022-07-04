@@ -1,14 +1,13 @@
-SPRINT 1
-AULA 14 - DIMENSIONAMENTO DE REDES ETHERCHANNEL E HSRP (09/03)
+DIMENSIONAMENTO DE REDES ETHERCHANNEL E HSRP (09/03)
 
 HSRP (HOT STANDBY ROUTER PROTOCOL – ETHERCHANNEL)
     LACP - IEEE 802.3ad
 
-STP - elimina um problema físico (imúmeras interfaces atreladas / "cabos a mais no Switch")
+STP - elimina problema físico
     * Gera redundância
-    * interfaces são desativadas (para utilizar apenas uma interface) e não agregadas / somadas
+    * interfaces são desativadas (para utilizar apenas uma interface) e não agregadas
 
-ETHERCHANNEL - Um STP "melhorado". Ele não desativa os cabos, mas os soma.
+ETHERCHANNEL - Ele não desativa os cabos, mas os soma.
     * Canal entre dois Switch's
     * EtherChannel é uma forma de agregação de links usada em redes comutadas.
     * Além da redundância, garantimos disponibilidade e melhora na largura de banda.
