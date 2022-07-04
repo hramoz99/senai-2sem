@@ -43,4 +43,4 @@ ROUTER
 	*Informação achada pelo comando #show run
 
 
-APÓS SOLUCIONAR ESSES DOIS ÚLTIMOS ERROS, DEVE-SE NOVAMENTE ALOCAR O ENDEREÇO IP AS RESPECTIVAS INTERFACES	
+NOTA: Alocar o edenreço IP as respectivas interfaces	
