@@ -1,29 +1,28 @@
-SPRINT-1 [VIRTUALIZAÇÃO]
-AULA (05/03)
+VIRTUALIZAÇÃO
 
-1)Novo
-* nome
-* windows
-* 10 64bits
+1) Novo
+ - nome
+ - windows
+ - 10 64bits
 
-2)4096 de memória (RAM)
+2) 4096 de memória (RAM)
 
-3)Criar um novo disco
+3) Criar um novo disco
 
-4)VDI
+4) VDI
 
-5)Dinamicamente alocado
+5) Dinamicamente alocado
 
-6)50GB em disco
+6) 50GB em disco
 
-7)CONFIGURAÇÕES - SISTEMA - SEQUÊNCIA DE BOOT 
+7) CONFIGURAÇÕES - SISTEMA - SEQUÊNCIA DE BOOT 
 * Desmarcar o disquete
 
-8)CONFIGURAÇÕES - REDE
-NAT - Acesso a internet / não disponibiliza acesso remoto
-BRIDGE - Aloca endereços IP de maneira automática / permite o acesso à internet / disponibiliza acesso remoto
+8) CONFIGURAÇÕES - REDE
+	NAT - Acesso a internet / não disponibiliza acesso remoto
+	BRIDGE - Aloca endereços IP de maneira automática / permite o acesso à internet / disponibiliza acesso remoto
 
-9)CONFIGURAÇÕES - ARMAZENAMENTO
+9) CONFIGURAÇÕES - ARMAZENAMENTO
 HD
 - VAZIO
    Clicar no disco ao lado superior direito 
@@ -67,7 +66,7 @@ ENTRAR NO FIREWALL DO WINDOWS
     Firewall do Windows
      Desabilitar Rede do Domínio, Rede privada e Rede pública
 
-MESMA REDE, MAS COM MÁSCARAS DIFERENTES
+REDE IGUAL | MÁSCARAS DIFERENTES
 * Ping será efetuado com sucesso!
 
 ENTREGA [Subir uma máquina virtual] (.docx)
