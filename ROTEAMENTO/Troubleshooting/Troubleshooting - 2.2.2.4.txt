@@ -2,45 +2,45 @@ Troubleshooting
 
 HOST
 
-	PC1 - informaÁıes de IP, M·scara e Gateway corretas
-	*InformaÁ„o achada pelo ipconfig no cmd.exe
+	PC1 - Endere√ßo IP, M√°scara e Gateway corretas
+	*Informa√ß√£o achada pelo ipconfig no cmd.exe
 	--------------------------------------------------------
 
 	PC2 - Gateway incorreto (172.17.10.1)
-		SOLU«√O: Trocar para 172.17.30.1
+		SOLU√á√ÉO: Trocar para 172.17.30.1
 
-	*InformaÁ„o achada pelo ipconfig no cmd.exe
+	*Informa√ß√£o achada pelo ipconfig no cmd.exe
 
 
 SWITCH
 
-	Interface g0/1 - est· em modo access
-		SOLU«√O: Trocar para o modo trunk
+	Interface g0/1 - est√° em modo access
+		SOLU√á√ÉO: Trocar para o modo trunk
 
-	*InformaÁ„o achada pelo comando #show interfaces trunk ou #show run
+	*Informa√ß√£o achada pelo comando #show interfaces trunk ou #show run
 
 ROUTER
 
 	Interface g0/1.10 - desativada
-		SOLU«√O: #no shutdown na porta
+		SOLU√á√ÉO: #no shutdown na porta
 	
-	*InformaÁ„o achada pelo comando #show ip interface brief
+	*Informa√ß√£o achada pelo comando #show ip interface brief
 
 	--------------------------------------------------------
 
 	Interface g0/1.10 - encapsulamento incorreto (.30)
-		SOLU«√O: (config-subif)#no encapsulation dot1Q 30
+		SOLU√á√ÉO: (config-subif)#no encapsulation dot1Q 30
 		 	 (config-subif)#encapsulation dot1Q 10
 
-	*InformaÁ„o achada pelo comando #show run
+	*Informa√ß√£o achada pelo comando #show run
 
 	--------------------------------------------------------
 
 	Interface g0/1.30 - encapsulamento incorreto (.10)
-		SOLU«√O: (config-subif)#no encapsulation dot1Q 10
+		SOLU√á√ÉO: (config-subif)#no encapsulation dot1Q 10
 		 	 (config-subif)#encapsulation dot1Q 30
 
-	*InformaÁ„o achada pelo comando #show run
+	*Informa√ß√£o achada pelo comando #show run
 
 
-AP”S SOLUCIONAR ESSES DOIS ⁄LTIMOS ERROS, DEVE-SE NOVAMENTE ALOCAR O ENDERE«O IP AS RESPECTIVAS INTERFACES	
+AP√ìS SOLUCIONAR ESSES DOIS √öLTIMOS ERROS, DEVE-SE NOVAMENTE ALOCAR O ENDERE√áO IP AS RESPECTIVAS INTERFACES	
