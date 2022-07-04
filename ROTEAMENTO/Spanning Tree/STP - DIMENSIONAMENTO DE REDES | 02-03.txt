@@ -1,5 +1,4 @@
-SPRINT 1
-AULA 09 - STP - DIMENSIONAMENTO DE REDES (02/03)
+STP - DIMENSIONAMENTO DE REDES (02/03)
 
 SWITCH (7x24)
 
@@ -16,7 +15,7 @@ AA-PC       AC-PC         BD-PC     CD-SERVIDOR    CASCATEAMENTO-FE
                     6    |       FF
 
 * Inicialmente os PCs mandarão um broadcast (255.255.255.255) 
-na rede buscando o servidor de DHCP (SERVIDOR)
+na rede buscando o servidor de DHCP
 
 * Porta 5 irá se conectar a um outro Switch (cascateamento)
 
@@ -30,7 +29,6 @@ na rede buscando o servidor de DHCP (SERVIDOR)
                     3    |       FE
                     4    |       CD?
 
-TUDO ISSO ESTÁ GERANDO INCONSISTÊNCIA NA REDE
 - Tempestade de Broadcast
 
 SPANNING-TREE (Protocolo - STP) [CASCATEAMENTO]
