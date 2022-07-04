@@ -1,4 +1,4 @@
-CRIAÇÃO DE VLAN´S (04 e 05/03)
+CRIAÇÃO DE VLANs (04 e 05/03)
 
 STP Loop.pkt (Spanning-Tree ativado)
     Nesse exercício iremos gerar um Loop na rede.
