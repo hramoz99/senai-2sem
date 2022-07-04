@@ -188,7 +188,7 @@ switchport mode trunk
 switchport trunk native vlan 99
 exit
 
-!Atrelar o IP a uma interface virtual (normalmente será a VLAN de Gerenciamento)
+!Atrelar o IP a uma interface virtual (VLAN de Gerenciamento)
 int vlan 99
 ip add 172.31.99.3 255.255.255.0
 
