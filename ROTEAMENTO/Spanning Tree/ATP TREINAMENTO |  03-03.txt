@@ -1,18 +1,17 @@
-﻿SPRINT 1
-AULA 10 - PRÁTICAS STP (03/03)
+STP (03/03)
 
 COMANDOS 
 
-    Verificar Spanning Tree por VLAN (aqui identificamos se o switch é root bridge da VLAN)
+    Verificar Spanning Tree por VLAN
     #show spanning-tree vlan 10
 
     Ver Interfaces
     #show interfaces 
 
-    Ver somente as FastEthernet
+    Ver interfaces FastEthernet
     #show interfaces | in FastEthernet 
 
-    Ver todas as interfaces conectadas do Spanning-tree
+    Ver todas as interfaces conectadas no Spanning-tree
     #show spanning-tree detail
     ou
     #show spanning-tree
@@ -71,9 +70,6 @@ DESAFIO
 * S3 é o Switch bridge (possui todas as interfaces ativas)
 - Normalmente, o Root não desativa as portas.
 
-* O que seria o "custo" no Switch?
-- Velocidade das portas
-100Mb/s - custo 19
 
 SCRIPT
 
