@@ -1,7 +1,6 @@
-SPRINT 1
-AULA 11/12 [REMOTO] - EXERCÍCIOS DE CRIAÇÃO DE VLAN´S (04 e 05/03)
+CRIAÇÃO DE VLAN´S (04 e 05/03)
 
-Exemplo STP Loop.pkt (Spanning-Tree ativado)
+STP Loop.pkt (Spanning-Tree ativado)
     Nesse exercício iremos gerar um Loop na rede.
 
 COMANDOS
@@ -31,8 +30,7 @@ CURIOSIDADES
 OBS: Após o STP ser desativado e reativado, pode haver certos problemas no MAC ("Não 'pinga' um outro PC")
      Solução - basta dar um reload no SW ou tirar e colocar novamente o cabo de link de dados.
 
-STP 2 Cabos - Loop.pkt (Spanning-Tree ativado)
-    Nesse exercício iremos corrigir o Loop que existe na rede.
+Iremos corrigir o Loop que existe na rede.
 
 
 
