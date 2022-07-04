@@ -1,18 +1,17 @@
-SPRINT 1
-AULA 08 - REDES COMUTADAS (01/03)
+REDES COMUTADAS
 
-* Redes Convergentes - dentro de uma mesma infraestrutura física, traféga = voz, imagem e som (vídeoconferência), vídeos streaming, informação
+* Redes Convergentes - dentro de uma mesma infraestrutura física traféga: voz, imagem e vídeo.
 
-HIERARQUIA DE UMA REDE COMUTADA (facilita o trabalho técnico)
+HIERARQUIA DE UMA REDE COMUTADA
 
-    - Moduladar: expansão da rede
-    - Flexível: inteligência ao direcionar recursos (Exemplo: quem necessita de mais largura de banda?)
+    - Modulador: expansão da rede
+    - Flexível: inteligência ao direcionar recursos, por exemplo, quem necessita de mais largura de banda
     - Disponibilidade: acesso a qualquer momento [redundância]
 
-        1ª Camada (acesso / permite acesso dos dispositivos do usuário) = acesso a rede através de um PC, impressora, telefone voip 
+        1ª Camada (acesso do usuário) = acesso a rede através de um PC, impressora, telefone voip 
         [conectados-a-um-switch]
 
-        2ª Camada (distribuição / Wiring Closet) = sala onde temos os switches, roteadores, servidores
+        2ª Camada (distribuição / Wiring Closet) = sala compostas de switches, roteadores, servidores
         - Melhor domínio de Broadcast
         - Roteamento, Switch L3
         - Políticas de acesso (ACL) 
@@ -40,11 +39,11 @@ CARACTERÍSTICAS DOS EQUIPAMENTOS
 STORE-AND-FOWARD
 
     - Armazena o bloco em seu buffer
-    CRC (quadro que armazena as informções de detecção de erros = cálculo) - Deve estar ok (os cálculos devem ser iguais na origem e no destino)
+    CRC = quadro que armazena as informações de detecção de erros (os cálculos devem ser iguais na origem e no destino)
 
     EXEMPLO:
 
-        TABELA MAC (armazenada por 5min nesse tipo de Switch)
+        TABELA MAC
         Porta | mac add
           1       AB
 
@@ -67,6 +66,6 @@ DOMÍNIO DE COLISÃO
 
 DOMÍNIO DE BROADCAST (255.255.255.255)
 
-    Sinal enviado por serviço de rede ou por um computador específico
+    Sinal enviado por serviço de rede ou um computador 
     Exmplo: IP automático - 255.255.255.255 (broadcast enviado na rede) - Qual IP você me mandará DHCP?
 
