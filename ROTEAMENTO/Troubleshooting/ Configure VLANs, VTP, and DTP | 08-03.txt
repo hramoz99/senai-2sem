@@ -1,7 +1,4 @@
-﻿SPRINT 1
-AULA 13 - EXERCÍCIOS COM TODOS OS CONHECIMENTOS (08/03)
-
-EXERCÍCIO - 2.1.4.4 Packet Tracer - Configure VLANs, VTP, and DTP.pka
+2.1.4.4 Packet Tracer - Configure VLANs, VTP, and DTP.pka
 
 VTP
     Cadastrar as VLANs em um cliente-server utilizando o protocolo VTP
