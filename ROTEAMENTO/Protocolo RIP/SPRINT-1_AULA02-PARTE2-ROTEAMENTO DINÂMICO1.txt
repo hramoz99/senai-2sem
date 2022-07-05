@@ -1,12 +1,11 @@
-﻿SPRINT - 1 
-AULA 02/03 - ROTEAMENTO DINÂMICO - RIPV2, TABELA DE ROTEAMENTO + EXERCÍCIOS (22/02)
-PARTE 2 (ROTEAMENTO DINÂMICO)
+ROTEAMENTO DINÂMICO - RIPV2, TABELA DE ROTEAMENTO (22/02)
+
 
     ROTA ESTÁTICA - Se preocupa apenas com o destino ("próximo salto")
     ROTA DINÂMICA - Anúncia as Redes (quais redes conhecidas pelo router)
 
     TABELA DE ROTEAMENTO:
-        R - identifica que a rota foi aprendida dinamicamente de outro roteador usando o
+        R - identifica que a rota foi descoberta dinamicamente de outro roteador usando o
         protocolo de roteamento RIP.
 
     COMANDOS: 
@@ -28,8 +27,9 @@ PARTE 2 (ROTEAMENTO DINÂMICO)
         Exibe as configurações do protocolo IPv4
         # show ip protocols
 
-    SCRIPT - SOLUÇÃO ROTA DINÂMICA 
-
+    SOLUÇÃO ROTA DINÂMICA 
+    
+    SCRIPT
         RT-RIO E RT-SP
             en
             conf t
@@ -44,9 +44,10 @@ PARTE 2 (ROTEAMENTO DINÂMICO)
             !REDES RIO
             network 192.168.1.0
             network 192.168.3.0
+            
 
-    DESAFIO PACKET TRACER:
-        TABELA: DISPOSITIVO - INTERFACE (NIC) - IP - MÁSCARA - GATEWAY
+    PACKET TRACER:
+    DISPOSITIVO - INTERFACE (NIC) - IP - MÁSCARA - GATEWAY
 
             PC0 - NIC - 192.168.10.1 - /24 (255.255.255.0) - 192.168.10.254 (GATEWAY)
 
@@ -66,3 +67,5 @@ PARTE 2 (ROTEAMENTO DINÂMICO)
                   Dar o Clock  
 
             PC1 - F0/0 - 172.16.0.1 - /16 - 172.16.255.254
+
+   
