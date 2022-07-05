@@ -1,14 +1,13 @@
-﻿SPRINT 1
-AULA 06/07 [REMOTO] - EXERCÍCIOS COM O PROTOCOLO RIP (25 e 26/02)
+PROTOCOLO RIP (25 e 26/02)
 
     RIPGNG ---> IPv6 (Representado em hexadecimal - 8 octetos - 1 número em hexadecimal = 4 bits)
     16 bits para 8 octetos - 128bits - 2^128
 
-    OBS: Após o 9, começa as letras (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F...)
+    OBS: Após o 9 começa as letras (0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F...)
          * Os números zeros (0000:0000:0000:0000) são resumidos por 0:0:0:0 e por consequência = ::
          * IPv6 suporta inúmeros IPs na placa, por isso... errou o IPv6, APAGUE e coloque o correto.
     
-        Exemplo - 2001:DB8:CAFE:CASA:: /64 (ID da Rede = 2001:DB8:CAFE:CASA = 64 bits)
+        Exemplo - 2001:DB8:CAFE:CASA:: / 64 (ID da Rede = 2001:DB8:CAFE:CASA = 64 bits)
 
         2 - 0010    
         0 - 0000
