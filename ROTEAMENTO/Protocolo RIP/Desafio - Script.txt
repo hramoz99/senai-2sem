@@ -25,19 +25,19 @@ no shutdown
 exit
 
 
-!Atrelar o endereÁo ip a uma interface (IPv4)
+!Atrelar o endere√ßo ip a uma interface (IPv4)
 int g0/0/0
-ip add [IP-M¡SCARA]
+ip add [IP-M√ÅSCARA]
 int s0/1/0
-ip add [IP-M¡SCARA]
+ip add [IP-M√ÅSCARA]
 int s0/1/1
-ip add [IP-M¡SCARA]
+ip add [IP-M√ÅSCARA]
 int loopback 0
-ip add [IP-M¡SCARA]
+ip add [IP-M√ÅSCARA]
 description GERENCIAMENTO
 exit
 
-!Roteamento din‚mico (RIPv2)
+!Roteamento din√¢mico (RIPv2)
 router rip
 version 2
 network [REDE-CONHECIDA]
