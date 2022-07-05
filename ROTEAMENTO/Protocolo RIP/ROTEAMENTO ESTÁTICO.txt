@@ -1,6 +1,5 @@
-﻿SPRINT - 1 
-AULA 02 - ROTEAMENTO DINÂMICO - RIPV2, TABELA DE ROTEAMENTO (19/02)
-PARTE 1 (ROTEAMENTO ESTÁTICO)
+ROTEAMENTO DINÂMICO - RIPV2, TABELA DE ROTEAMENTO (19/02)
+
 
 ROTEAMENTO ESTÁTICO - define a rota na qual o roteador deve seguir
 para chegar a uma determinada rede (acesso a uma unica rota padrão).
@@ -40,7 +39,7 @@ ROTA PADRÃO - Caminho para qual o roteador vai manter os pacotes,
 quando ele não tiver nenhuma outra opção.
 
 
-EXERCÍCIO PACKET TRACER
+PACKET TRACER
 
 	SCRIPT (ROUTER)
 
@@ -101,6 +100,3 @@ INFORMAÇÕES
 	é configurada com um endereço IP e ativada.
 
 
-OBS
-
-	SALVAR O 1° ARQUIVO - "Solução de rota estática"
