@@ -4,7 +4,7 @@ PROTOCOLO RIPv2 3.2.1.8 (23/02)
 
         Protocolos Internos de Gateway (IGPs)
 
-            Protocolos de roteamento por vetor-distância (se preocupa com os saltos)
+            Protocolos de roteamento por vetor-distância - preocupação com os saltos
                 RIPv1 (CLASSFULL)
                     RIPv2 (CLASSLESS)
                     * PS: 15 Saltos (máximo) / 16 Roteadores (em linha reta) - (48 máximo);
@@ -30,12 +30,11 @@ COMANDOS
     default-information originate - propagação de uma rota estática
     passive-interface - economiza processamento do router
     show ip route rip - ver as rotas rip
-    * (Tabela de roteamento) - candidato a rota padrão
-    arp -a (prompt de comando) - Nos mostra os endereços MAC
+    arp -a (prompt de comando) - apresenta os endereços MAC
 
-EXERCÍCIO PACKET-TRACER
+PACKET-TRACER
+Exercício
 
-SCRIPT
 !R1
 en
 conf t
