@@ -1,5 +1,4 @@
-SPRINT 1
-AULA 21-22-23 - [REMOTO] (18, 19 e 23/03) - ENTREGÁVEL - CORREÇÃO
+ENTREGÁVEL - CORREÇÃO
 
 1) Configurar os ativos;
 2) Configurar o protocolo rip;
