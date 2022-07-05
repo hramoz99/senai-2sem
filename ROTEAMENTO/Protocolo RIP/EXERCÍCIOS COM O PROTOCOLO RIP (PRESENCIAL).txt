@@ -1,21 +1,20 @@
-SPRINT 1
-AULA 06/07 [PRESENCIAL] - EXERCÍCIOS COM O PROTOCOLO RIP (25 e 26/02)
+PROTOCOLO RIP (26/02)
 
-  Comandos abordados em aula
-  	Windows + R ----> Abre a execução do Windows
+  COMANDOS
+  	Windows + R ----> Abre a execuÃ§Ã£o do Windows
   	ncpa.cpl ----> Abre as interfaces NIC
 
-  Apagar as configurações do RT E SW
-  	* Ao inciar o boot - dar o comando Ctrl + C (até aparecer SWT: ou RT:)
+  Apagar as configuraÃ§Ãµes || RT E SW
+  	* Inciar o boot - comando Ctrl + C (atÃ© aparecer SWT: ou RT:)
   	- Dar o comando ----> del flash: config.text (RT)
                               del flash: vlan.dat (SW)
 
-  "Compartilhamento avançado" / Firewall - Ativar os pacotes IP
+  "Compartilhamento avanÃ§ado" / Firewall - Ativar os pacotes IP
 
-  OBS: Configurações no Putty
-  	Selecionar a opção Serial - COM1 (Qual a COM que o PC usará) - Ir na última opção do Serial e clicar em "NONE" - Salvar as alterações
+  OBS: ConfiguraÃ§Ãµes no Putty
+  	Selecionar a opÃ§Ã£o Serial - COM1 (COM em que o PC utilizarÃ¡) - Ir na Ãºltima opÃ§Ã£o do Serial e clicar em "NONE" - Salvar as alteraÃ§Ãµes
 
-  SCRIPT da Aula:
+  SCRIPT
 
   !SP
   en
