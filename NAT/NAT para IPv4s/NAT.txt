@@ -1,5 +1,9 @@
 O que é o NAT?
 
+    O NAT é usado para aliviar a redução do espaço de endereços IPv4. O NAT para IPv4 permite que os 
+    administradores de rede usem a RFC 1918 de espaço de endereço privado para fornecer conectividade 
+    à Internet usando um número de endereços públicos único ou limitado.
+    
     O NAT tem várias utilidades, mas seu principal uso é conservar endereços IPv4 públicos, permitindo que as redes usem endereços
     IPv4 privados internamente e fornecendo conversão para um endereço público somente quando necessário.
 
@@ -22,4 +26,5 @@ Roteador de borda
 OBS: 
 
     Um dispositivo ativado para NAT geralmente opera na fronteira de uma rede stub.
+
 
