@@ -1,10 +1,10 @@
-SPRINT 2 - AULA 28/29 - PAT E EXERCÍCIOS [PRESENCIAL] (15 e 16/03)
+PAT E EXERCÍCIOS - 16/03
 
-REVISÃO - PAT
+REVISÃO
 
-* Passo a passo - configuração PAT
+* Passo a passo - PAT
 
-PASSO 1 e 2. Definir as interfaces de entrada e saída (em relação ao NAT)
+PASSO 1 e 2. Definir as interfaces de entrada e saída (NAT)
 PASSO 3. Criar uma ACL 
 PASSO 4. Definir o pool de endereços
 PASSO 5. Criação do PAT
@@ -31,15 +31,16 @@ Verificação NAT                   Limpar as verificações
 #sh ip nat translations           #clear ip nat translations *       
 #sh ip nat statistics             #clear ip nat statistics
 
-OBS: Ativar CLI no Packet tracer - options ==> preferences ==> HIDE ==> desmarcar o 'hide cli'
+ NOTA: 
+ Ativar CLI no Packet tracer - options ==> preferences ==> HIDE ==> desmarcar 'hide cli'
 
 TROUBLESHOOTING (9.3.1.4)
 
 As interfaces NAT 'inside' e 'outside' estão posicionadas de maneira incorreta
 
-SOLUÇÃO (Aplicadas em R2)
+SOLUÇÃO - Aplicadas no R2
 
-!Apagar o erro
+#Apagar o erro
 en
 conf t
 int s0/0/0
@@ -48,7 +49,7 @@ int s0/0/1
 no ip nat outside
 exit
 
-!Correção
+#Correção
 int s0/0/0
 ip nat outside
 int s0/0/1
@@ -61,10 +62,10 @@ Máscara da ACL 101 está incorreta
 
 SOLUÇÃO
 
-!Apagar o erro
+#Apagar o erro
 no access-list 101
 
-!Correção
+#Correção
 access-list 101 permit ip 10.4.10.0 0.0.1.255 any
 
 ou 
