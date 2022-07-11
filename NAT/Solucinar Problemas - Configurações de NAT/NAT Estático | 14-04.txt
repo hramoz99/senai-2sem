@@ -1,11 +1,6 @@
-SPRINT 2 - AULA 27 -  NAT ESTÁTICO (14-04)
+NAT ESTÁTICO 
 
-NAT - endereço privado (não podem ser roteados pela Internet) transformado em IP público (através de um roteador)
-
-    * O NAT tem várias utilidades, mas seu principal uso é conversar endereços IPv4 públicos.
-    
-    * O NAT tem um benefício a mais de adicionar um grau de privacidade e segurança a uma rede, porque oculta os endereços IPv4 internos de 
-    redes externas.
+NAT - endereço privado transformado em IP público através de um roteador
 
     * Um dispositivo ativado para NAT geralmente opera na borda de uma rede stub (apenas um ponto de saída para internet).
 
