@@ -7,7 +7,7 @@ conf t
 hostname R_CENTRAL
 service password-encryption
 
-!Desativar o erro "domain" (busca de hosts na rede)
+!Desativar o erro "domain" - Busca de hosts na rede
 no ip domain-lookup
 
 !Senha de enable (secreta / criptografada)
@@ -62,7 +62,7 @@ conf t
 hostname R_SANTOS
 service password-encryption
 
-!Desativar o erro "domain" (busca de hosts na rede)
+!Desativar o erro "domain" - Busca de hosts na rede
 no ip domain-lookup
 
 !Senha de enable (secreta / criptografada)
@@ -110,7 +110,7 @@ conf t
 hostname R_ITA
 service password-encryption
 
-!Desativar o erro "domain" (busca de hosts na rede)
+!Desativar o erro "domain" - Busca de hosts na rede
 no ip domain-lookup
 
 !Senha de enable (secreta / criptografada)
@@ -163,7 +163,7 @@ conf t
 hostname R_SC
 service password-encryption
 
-!Desativar o erro "domain" (busca de hosts na rede)
+!Desativar o erro "domain" - Busca de hosts na rede)
 no ip domain-lookup
 
 !Senha de enable (secreta / criptografada)
