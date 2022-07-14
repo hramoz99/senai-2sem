@@ -1,4 +1,4 @@
-DESAFIO OSPF MULTIÁREA
+DESAFIO OSPF MULTIAREA
 
 #R_CENTRAL
 !Hostname do Router e habilitação das senhas criptografadas
