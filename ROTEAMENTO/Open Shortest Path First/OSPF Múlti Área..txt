@@ -1,9 +1,11 @@
-﻿SPRINT 2 - AULA 32/33 - OSPF Multi área [REMOTO] (22/04 e 23/04)
+OSPF Multi área
 
     - Somente uma área(0)
-    - Mais de 1 área, usar a área 0 como Backbone
+    - Mais de 1 área
+    - Usar a área 0 como Backbone
 
-SCRIPT - Exercício 26_PROTOCOLO_OSPF_MULTI
+SCRIPT
+Exercício 26 PROTOCOLO OSPF MULTI
 
 AREA 0 = Backbone
 AREA 1 = 10 hosts
@@ -49,7 +51,7 @@ IPs NOS HOSTS
 
 CONFIGURAÇÃO
 
-!R_1
+#R_1
 !Nome de host
 en
 conf t
@@ -82,7 +84,7 @@ do wr
 
 ---------------------------------------
 
-!R_2
+#R_2
 !Nome de host
 en
 conf t
@@ -108,7 +110,7 @@ do wr
 
 --------------------------------------
 
-!R_0
+#R_0
 !Nome de host
 en
 conf t
