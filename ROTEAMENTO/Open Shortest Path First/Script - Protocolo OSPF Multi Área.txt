@@ -1,6 +1,6 @@
 OSPF MULTI AREA
 
-SCRIPT - Exercício 29_PROTOCOLO_OSPF_MULTI_3.pkt
+SCRIPT - Exercício 29 OSPF MULTI 3
 
 #R_0
 !hostname
