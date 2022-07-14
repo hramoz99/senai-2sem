@@ -1,6 +1,6 @@
-SCRIPT (Lucas Cabral) - Exercício - 12_DESAFIO_OSPF_MULTIAREA.pka
+DESAFIO OSPF MULTIAREA
 
-!R_CENTRAL
+#R_CENTRAL
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -55,7 +55,7 @@ copy running-config startup-config
 
 ------------------------------------------------------------
 
-!R_SANTOS
+#R_SANTOS
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -103,7 +103,7 @@ copy running-config startup-config
 
 ------------------------------------------------------------
 
-!R_ITA
+#R_ITA
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -156,7 +156,7 @@ copy running-config startup-config
 
 ------------------------------------------------------------
 
-!R_SC
+#R_SC
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -204,7 +204,7 @@ copy running-config startup-config
 
 ------------------------------------------------------------
 
-!R_PAR
+#R_PAR
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -257,7 +257,7 @@ copy running-config startup-config
 
 ------------------------------------------------------------
 
-!R_JUQ
+#R_JUQ
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
