@@ -1,5 +1,5 @@
-* SCANNER DE IP = Advanced IP Scanner
-
+Advanced IP Scanner | SCANNER DE IP 
+ 
     1 - A rede 192.168.0.0/24
     R: 254 IPs válidos 
 
