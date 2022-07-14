@@ -1,10 +1,10 @@
-!R_MATRIZ
+#R_MATRIZ
 !Nome do router
 en
 conf t
 hostname R_MATRIZ
 
-!Configuração das interfaces
+#Configuração das interfaces
 int g0/0/0
 ip add 192.168.0.126 255.255.255.128
 no shut
@@ -32,7 +32,7 @@ do wr
 
 -------------------------------------
 
-!R_FILIAL1
+#R_FILIAL1
 !Nome do router
 en
 conf t
@@ -64,7 +64,7 @@ do wr
 
 -------------------------------------
 
-!R_FILIAL2
+#R_FILIAL2
 !Nome do router
 en
 conf t
