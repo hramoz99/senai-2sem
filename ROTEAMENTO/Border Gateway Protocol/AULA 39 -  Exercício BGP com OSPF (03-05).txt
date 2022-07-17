@@ -1,11 +1,6 @@
-AULA 39 -  Exercício BGP com OSPF (03/05)
+BGP & OSPF
 
-    Roteamento (Exemplo)
-
-        - OSPF (S0/1/0)
-        - BGP (S0/1/1)
-
-    Sintáxe (Exemplo)
+    Sintáxe: 
 
         router ospf 70
         passive interface g0/0/0
@@ -18,10 +13,12 @@ AULA 39 -  Exercício BGP com OSPF (03/05)
         neighbor 10.0.0.17 remote-as 13203
         network 10.0.0.16 mask 255.255.255.252
         redistribute ospf 70 
+        
+        
 
-SCRIPT 32_EXERCÍCIO_BGP_OSPF_EM_AULA_03052021
+SCRIPT EXERCÍCIO_BGP_OSPF
 
-!R3
+#R3
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -65,7 +62,7 @@ passive-interface g0/0/0
 do wr
 ------------------------------------------------------------
 
-!R2
+#R2
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -110,7 +107,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R1
+#R1
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -160,7 +157,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R0
+#R0
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
