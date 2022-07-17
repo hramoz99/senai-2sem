@@ -1,21 +1,19 @@
-﻿AULA 42 - EXERCÍCIOS COM OSPF e BGP (reforçando conceitos) (06-05)
-
-DESAFIO - ENTREGA
-Autor: Lucas Cabral
+OSPF e BGP
 
 * CÁLCULO DAS REDES
 
-Dispositivo    Hosts	          REDE       Máscara        Máscara em Decimal            Range de IPs         
-  R_ITQ	     700 (1022)	      172.16.0.0       /22	       255.255.252.0	     172.16.0.1 - 172.16.3.254
- R_PONTAL    500 (510)        172.16.4.0       /23             255.255.254.0         172.16.4.1 - 172.16.5.254
-  R_ITA	     200 (254)	      172.16.6.0       /24	       255.255.255.0	     172.16.6.1 - 172.16.6.254
-  R_BX	      50 (62)	      172.16.7.0       /26	      255.255.255.192	     172.16.7.1 - 172.16.7.62
-  R_LEME      30 (30)         172.16.7.64      /27	      255.255.255.224	    172.16.7.65 - 172.16.7.94
-  R_SM	      10 (14)	      172.16.7.96      /28	      255.255.255.240	    172.16.7.97 - 172.16.7.110
+Dispositivo      Hosts	          REDE         Máscara       Máscara em Decimal       Range de IPs         
+  R_ITQ	       700 (1022)	      172.16.0.0       /22	         255.255.252.0	        172.16.0.1 - 172.16.3.254
+  R_PONTAL     500 (510)        172.16.4.0       /23           255.255.254.0          172.16.4.1 - 172.16.5.254
+  R_ITA	       200 (254)	      172.16.6.0       /24	         255.255.255.0	        172.16.6.1 - 172.16.6.254
+  R_BX	        50 (62)	        172.16.7.0       /26	         255.255.255.192	      172.16.7.1 - 172.16.7.62
+  R_LEME        30 (30)         172.16.7.64      /27	         255.255.255.224	      172.16.7.65 - 172.16.7.94
+  R_SM	        10 (14)	        172.16.7.96      /28	         255.255.255.240	      172.16.7.97 - 172.16.7.110
 
-* SCRIPT - ROTEADORES
 
-!R_ITQ
+SCRIPT - ROTEADORES
+
+#R_ITQ
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -60,7 +58,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_SM
+#R_SM
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -105,7 +103,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_ITA
+#R_ITA
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -150,7 +148,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_BX
+#R_BX
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -195,7 +193,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_LEME
+#R_LEME
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -240,7 +238,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_PONTAL
+#R_PONTAL
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -285,7 +283,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_LESTE
+#R_LESTE
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -349,7 +347,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_SUL
+#R_SUL
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -413,7 +411,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_SP
+#R_SP
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
@@ -462,7 +460,7 @@ do wr
 
 ------------------------------------------------------------
 
-!R_RJ
+#R_RJ
 !Hostname do Router e habilitação das senhas criptografadas
 en
 conf t
