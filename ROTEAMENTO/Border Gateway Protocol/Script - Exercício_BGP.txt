@@ -1,4 +1,4 @@
-AULA 41 - EXERCÍCIOS DE FIXAÇÃO PROTOCOLO BGP (05/05)
+PROTOCOLO BGP 
 
     No Brasil, o PTT.br é um projeto de PTTs locais gerido pelo Núcleo de Informação e Coordenação do Ponto Br (Nic.br) e pelo Comitê Gestor 
     da Internet no Brasil (CGI.br), que facilita o fluxo de informações entre provedores de internet e conteúdo online no país.
@@ -9,11 +9,11 @@ AULA 41 - EXERCÍCIOS DE FIXAÇÃO PROTOCOLO BGP (05/05)
 
     CURIOSIDADE = no protocolo BGP, redes /24 podem ser declaradas até mesmo sem o parâmetro mask!
 
-SCRIPT - Exercício - 'Aula 41_EXERCÍCIO_BGP_EM_AULA_050520211'
 
-    OBS: Parte 1 do Exercício = ausência do roteador "VIVOCLI2" (colocado para gerar redundância na rede)
 
-!TIM
+SCRIPT - EXERCÍCIO_BGP
+
+#TIM
 !Hostname
 en
 conf t
@@ -40,7 +40,7 @@ do wr
 
 --------------------------------------------
 
-!VIVO1
+#VIVO 1 
 !Hostname
 en
 conf t
@@ -69,7 +69,7 @@ do wr
 
 --------------------------------------------
 
-!VIVO2
+#VIVO 2
 !Hostname
 en
 conf t
@@ -98,7 +98,7 @@ do wr
 
 --------------------------------------------
 
-!VIVOCLI
+#VIVO CLI
 !Hostname
 en
 conf t
@@ -125,37 +125,37 @@ do wr
 
 *****************************************************************************************************************
 
-PARTE 2 - DUPLA ABORDAGEM (Adição do roteador VIVOCLI2)
-NOTA = Esta segunda parte não está utilizando o protocolo HSRP, apenas foi adicionada mais uma rota para o Servidor HTTP
+DUPLA ABORDAGEM
 
-1) Adicione um novo roteador (4331), cujo nome será "VIVOCLI2"
 
-2) Conecte o roteador VIVO1 no VIVOCLI2 (interface s0/2/0)
+1) Adicione um novo roteador (4331)
+
+2) Conecte o roteador VIVO 1 no novo roteador (interface s0/2/0)
 
 3) Uma nova rede deve ser adicionada para esses roteadores, na qual será 189.190.193.0/30
 
-4) Cadastre o IP 189.190.193.1 na s0/2/0 do roteador VIVO1
+4) Cadastre o IP 189.190.193.1 na s0/2/0 do roteador VIVO 1
 
-5) Cadastre o IP 189.190.193.2 na s0/2/0 do roteador VIVOCLI2
+5) Cadastre o IP 189.190.193.2 na s0/2/0 no novo roteador
 
-    OBS: As seguintes mensagens de log aparecerão no roteador VIVO1 
+    OBS: As seguintes mensagens de log aparecerão no roteador VIVO 1 
 
         %BGP-3-NOTIFICATION: sent to neighbor 189.190.190.1 6/0 (unsupported) 0 bytes 
         %BGP-3-NOTIFICATION: sent to neighbor 189.190.191.2 6/0 (unsupported) 0 bytes 
         %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/2/0, changed state to up
 
-6) Cadastre o IP 200.0.0.254 (/24) na g0/0/0 do VIVOCLI2
+6) Cadastre o IP 200.0.0.254 (/24) na g0/0/0 do novo roteador
 
-    OBS: O cabo deve ser retirado do Servidor HTTP ---> VIVOCLI p/ Servidor HTTP ---> VIVOCLI2
+    OBS: O cabo deve ser retirado do Servidor HTTP ---> VIVO CLI p/ Servidor HTTP ---> Novo router
 
-7) Cadastre a nova rede e o novo "vizinho" no VIVO1
+7) Cadastre a nova rede e o novo "vizinho" no VIVO 1
 
     router bgp 13201
     network 189.190.193.0 mask 255.255.255.252
     neighbor 189.190.193.2 remote-as 20000
     do wr
 
-8) Cadastre a nova rede e o novo "vizinho" no VIVOCLI2
+8) Cadastre a nova rede e o novo "vizinho" no novo roteador
 
     router bgp 20000
     network 200.0.0.0
