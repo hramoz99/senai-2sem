@@ -1,28 +1,28 @@
-﻿AULA 37/38 - PONTO A PONTO - WAN [PRESENCIAL] (29 e 30/04)
+PONTO A PONTO - WAN 
 
-WAN = Wide Área Network [Camada Física e Enlace de Dados = 1 e 2 no modelo OSI]
+WAN = Wide Área Network [Camada Física (1) e Enlace de Dados (2) | modelo OSI]
 
-    * A WAN é de propriedade de um provedor de serviços ISPs (Internet Service Provider);
+    * A rede WAN é propriedade de um provedor de serviços ISPs (Internet Service Provider);
 
-    * Os provedores de serviços de WAN incluem operadoras, como uma rede de telefone, uma empresa de cabeamento ou um serviço satélite.
+    * Os provedores de serviços de WAN incluem rede de telefone, empresa de cabeamento ou um serviço satélite.
 
-    PPT = Ponto de Trágefo (redução de custos)
+PPT = Ponto de Tráfego (redução de custos)
 
-    Telefonia IP = trabalhar pela rede 
+    * Telefonia IP = trabalhar pela rede 
 
 WAN - DISCAGEM
 
-    * Conexões discadas, antigas e que usavam uma linha telefônica analógica para a transmissão de dados;
+    * Conexões discadas e antigas que usavam uma linha telefônica analógica para a transmissão de dados;
 
-    Observação: embora poucas empresas suportem acesso discado, ele ainda é uma solução viável para áreas remotas com opções de acesso à WAN limitadas.
+   Observação: Embora poucas empresas suportem acesso discado, ainda é uma solução viável para áreas remotas com opções de acesso à WAN limitadas.
 
 WAN – DSL
 
-    * É uma tecnologia de conexão sempre ativa que usa linhas de telefone de par trançado existentes para transportar dados em largura de banda elevada e oferece serviços de IP para os assinantes.
+    * Tecnologia de conexão sempre ativa que usa linhas de telefone de par trançado existentes para transportar dados em largura de banda elevada e oferece serviços de IP para os assinantes.
 
     CURIOSIDADE: 
 
-        SDSL oferece a mesma capacidade nas duas direções. As diferentes variedades de DSL oferecem larguras de banda diferentes, algumas com capacidades acima de 40 Mb/s (para longas distâncias, chegavam até 20Mb/s).
+        SDSL oferece a mesma capacidade nas duas direções. Os tipos de DSL oferecem larguras de banda diferentes, algumas com capacidades acima de 40 Mb/s.
 
 WAN – Ethernet [100m]
 
@@ -61,9 +61,6 @@ WAN – WiMAX [Worldwide Interoperability for Microwave Access]
 
 SEM FIO
 
-    * Banda larga sem fio estão aumentando
-    disponibilidade da internet, principais:
-
         - Wi-Fi municipal
         - Celular/móvel
 
@@ -73,11 +70,11 @@ WAN – Celular 3G, 4G e 5G [http://www.coberturacelular.com.br/]
 
     * Essas tecnologias suportam acesso à internet sem fio.
 
-    * LTE (Long-term Evolution, evolução de longo prazo) refere-se a uma tecnologia mais nova e mais rápida, considerada parte da tecnologia de quarta geração (4G).
+    * LTE (Long-term Evolution, Evolução de Longo Prazo) refere-se a uma tecnologia mais nova e mais rápida, considerada parte da tecnologia de quarta geração (4G).
 
     OBS: Não confundir com o Padrão IEEE 802.11ac para redes Wi-fi.
 
     CURIOSIDADE = Tecnologia Mash
 
-        Troca de wi-fi atrvés das antenas 
+        Troca de wi-fi através das antenas 
         Exemplo: "Wi-fi Sala" e "Wi-fi Quarto"
