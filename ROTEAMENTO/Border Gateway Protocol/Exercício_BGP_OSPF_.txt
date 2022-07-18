@@ -1,11 +1,11 @@
-AULA 40 - EXERCÍCIOS DE FIXAÇÃO COM PROTOCOLO BGP E OSPF (04/05)
+BGP E OSPF
 
-    DEFINIÇÃO DE AS = AS (Autonomous System):"... entidades que possuem equipamentos de rede que estão sob um mesmo domínio administrativo"
+    AS (Autonomous System):"entidades que possuem equipamentos de rede que estão sob um mesmo domínio administrativo"
     REDE CONVERGINDO = Rede com comunicação 
 
-SCRIPT - Exercício 'AULA 40 - EXERCÍCIOS DE FIXAÇÃO COM PROTOCOLO BGP E OSPF - 04052021'
+SCRIPT - Exercício_BGP_OSPF_ 
 
-!R3
+#R3
 !Hostname
 en
 conf t
@@ -33,7 +33,7 @@ do wr
 
 -----------------------------------
 
-!R0
+#R0
 !Hostname
 en
 conf t
@@ -93,7 +93,7 @@ do wr
 
 -----------------------------------
 
-!R1
+#R1
 !Hostname
 en
 conf t
@@ -127,7 +127,7 @@ do wr
 
 -----------------------------------
 
-!R-CENTRAL
+#R-CENTRAL
 !Hostname
 en
 conf t
