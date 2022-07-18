@@ -14,7 +14,9 @@ BGP e HSRP
 
     Adicionar mais de um IP na interface = ncpa.cpl --> protocolo IPv4 --> Avançado 
 
-SCRIPT - Exercício 
+
+
+SCRIPT - Continuação
 
 #TIM
 !Hostname
