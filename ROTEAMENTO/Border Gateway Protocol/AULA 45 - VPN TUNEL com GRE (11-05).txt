@@ -1,8 +1,8 @@
-AULA 45 - VPN TUNEL com GRE (11-05)
-
-    VPN - Interface virtual = Túnel
-
-    CADASTRANDO UM TÚNEL VPN (GRE - Fechado no roteador - Server to Server) - EXEMPLO
+VPN TUNEL com GRE
+    
+    
+ CADASTRANDO UM TÚNEL VPN 
+ GRE | Fechado no roteador | Server to Server
 
                 RA
 
@@ -46,16 +46,16 @@ RA - Interface g0/0/ está errada (invertida com o Túnel)
     no ip add
     int g0/0 
     no ip add
-
-    !---------
+    
+---------------------------------------
 
     ip add 172.31.0.1 255.255.255.0
     int tunnel 0
     ip add 192.168.1.1 255.255.255.252
 
-------------------------------------- 
+---------------------------------------
 
-NAT com Overload NO RA
+NAT com Overload - RA
 
 en
 conf t
@@ -98,14 +98,14 @@ RB - Túnel está incorreto
     no tunnel source
     no tunnel destination
 
-    !--------------------
+-----------------------------------
 
     tunnel source s0/0/0
     tunnel destination 209.165.122.2
 
 ------------------------------------
 
-NAT com Overload NO RB
+NAT com Overload - RB
 
 en
 conf t
@@ -127,14 +127,14 @@ ip nat inside source list LIB_172 pool meuip overload
 
 ===========================================================================================================================
 
-CONFIGURANDO VPN COM GRE DO ZERO
+CONFIGURANDO VPN COM GRE
 
 - REDE A 192.168.0.0/24 = PC0 (Último IP válido), SP (1 IP válido)
 - REDE B 192.168.1.0/24 = PC1 (Último IP válido), RIO (1 IP válido)
 - REDE 200.1.2.0/30 = WAN (.1 - SP; .2 -RIO)
 - TÚNEL 172.16.0.1/30 e 172.16.0.2/30
 
-!SP
+#SP
 !Configurações iniciais
 en
 conf t
@@ -164,7 +164,7 @@ do wr
 
 ----------------------------------
 
-!RIO
+#RIO
 !Configurações iniciais
 en
 conf t
