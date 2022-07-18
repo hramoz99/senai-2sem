@@ -1,7 +1,6 @@
 BGP E OSPF
 
-    AS (Autonomous System):"entidades que possuem equipamentos de rede que estão sob um mesmo domínio administrativo"
-    REDE CONVERGINDO = Rede com comunicação 
+    'AS (Autonomous System):entidades que possuem equipamentos de rede que estão sob um mesmo domínio administrativo'
 
 SCRIPT - Exercício_BGP_OSPF_ 
 
