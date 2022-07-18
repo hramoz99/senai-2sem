@@ -1,12 +1,12 @@
-SCRIPT - Aula Presêncial (06/05)
+SCRIPT 
 
-!R1
+#R1
 !hostname
 en
 conf t
 hostname R1
 
-!Endereço IP nas interfaces
+!EndereÃ§o IP nas interfaces
 int g0/0
 ip add 192.168.0.252 255.255.255.0
 no sh
@@ -28,18 +28,18 @@ standby 2 ip 200.100.50.1
 standby 2 priority 130
 exit
 
-!Salvar as configurações 
+!Salvar as configuraÃ§Ãµes 
 do wr
 
 ---------------------------------------
 
-!R2
+#R2
 !hostname
 en
 conf t
 hostname R2
 
-!Endereço IP nas interfaces
+!EndereÃ§o IP nas interfaces
 int g0/0
 ip add 192.168.0.253 255.255.255.0
 no sh
@@ -61,5 +61,5 @@ standby 2 ip 200.100.50.1
 standby 2 priority 180
 exit
 
-!Salvar as configurações 
+!Salvar as configuraÃ§Ãµes 
 do wr
