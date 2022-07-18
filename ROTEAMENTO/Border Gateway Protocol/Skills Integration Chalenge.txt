@@ -1,6 +1,6 @@
-AULA 47 - EXERCÍCIO INTEGRAÇÃO (13/05)
+Skills Integration Chalenge
 
-CURIOSIDADE - PROTOCOLO DE AUTENTICAÇÃO 
+PROTOCOLO DE AUTENTICAÇÃO 
 
 !Configurações PPP
 interface serial 0/0/0
@@ -21,7 +21,7 @@ Autenticação e confirmação - Exercício 3.6.1.2 - Skills Integration Chaleng
 
 SCRIPT 
 
-!BRANCH - "FILIAL"
+#BRANCH - "FILIAL"
 !Definição dos endereços IPs
 en
 conf t
@@ -56,7 +56,7 @@ neighbor 209.165.201.21 remote-as 65535
 
 ----------------------------------------------------
 
-!Sede
+#Sede
 !SSH
 en
 conf t
@@ -120,7 +120,7 @@ passive-interface g0/0
 
 ----------------------------------------------------
 
-!REMOTE
+#REMOTE
 !Definição dos endereços IPs
 en
 conf t
