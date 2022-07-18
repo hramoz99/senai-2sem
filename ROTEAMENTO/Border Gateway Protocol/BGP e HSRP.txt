@@ -1,10 +1,10 @@
-AULA 43 - BGP e HSRP (Continuação AULA 41) (07-05)
+BGP e HSRP
 
     Protocolo de roteamento de borda (Internet) = BGP
     Métrica = dois caminhos / duas rotas (melhor caminho)
         OBS: Menor métrica = melhor caminho
 
-    Link compartilhado = um link mais barato que o link dedicado (cliente NET comum por exemplo)
+    Link compartilhado = link mais barato que o link dedicado
 
     Link backup ou Failover = tolerância à falhas (quando um link falhar o outro entra em ação) - HSRP (dupla abordagem)
 
@@ -14,9 +14,9 @@ AULA 43 - BGP e HSRP (Continuação AULA 41) (07-05)
 
     Adicionar mais de um IP na interface = ncpa.cpl --> protocolo IPv4 --> Avançado 
 
-SCRIPT - Exercício - Aula 43
+SCRIPT - Exercício 
 
-!TIM
+#TIM
 !Hostname
 en
 conf t
@@ -49,7 +49,7 @@ do wr
 
 --------------------------------------------
 
-!VIVO1
+#VIVO 1
 !Hostname
 en
 conf t
@@ -78,7 +78,7 @@ do wr
 
 --------------------------------------------
 
-!VIVO2
+#VIVO 2
 !Hostname
 en
 conf t
@@ -107,7 +107,7 @@ do wr
 
 --------------------------------------------
 
-!PTT
+#PTT
 !Hostname
 en
 conf t
@@ -136,7 +136,7 @@ do wr
 
 --------------------------------------------
 
-!VIVOCLI1
+#VIVOCLI1
 !Hostname
 en
 conf t
@@ -166,7 +166,7 @@ do wr
 
 --------------------------------------------
 
-!VIVOCLI2
+#VIVO CLI2
 !Hostname
 en
 conf t
