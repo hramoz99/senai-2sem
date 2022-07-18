@@ -1,4 +1,4 @@
-BGP e HSRP
+BGP com HSRP
 
     Protocolo de roteamento de borda (Internet) = BGP
     Métrica = dois caminhos / duas rotas (melhor caminho)
