@@ -1,13 +1,10 @@
-SCRIPT --> Exercício BGP - Sem OSPF
+BGP - Sem OSPF
 
     BGP - utilizado mais para redes externas (internet)
-        !Não será necessário aplicar o NAT!
-        !Compra de IPs validos = Range de IPs!
-            !Declarar um AS = declarar uma nome (id de bgp) para os blocos de IPs!
 
-    RIP e OSPF - utilizado mais para redes internas (rede local)
+    RIP e OSPF - utilizado para redes internas (rede local)
 
-!R1
+#R1
 !Hostname
 en
 conf t
@@ -33,7 +30,7 @@ do wr
 
 -----------------------------------------
 
-!R2
+#R2
 !Hostname
 en
 conf t
