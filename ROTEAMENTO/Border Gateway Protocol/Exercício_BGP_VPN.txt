@@ -1,8 +1,8 @@
-EXERCÍCIO BGP COM VPN 
+BGP COM VPN 
 
 
 DOCUMENTAÇÃO - Exercício_VPN
-
+ 
 Matriz - s0/1/0 - 200.190.200.2/30
          g0/0/0 - 172.16.255.254/16
 
