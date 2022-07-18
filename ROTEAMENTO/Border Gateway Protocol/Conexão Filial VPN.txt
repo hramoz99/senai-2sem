@@ -1,4 +1,4 @@
-AULA 44 - Conexão Filial VPN (10-05)
+Conexão Filial VPN 
 
 REDE WAN --> Várias redes LANs
 REDE FILIAL --> Unir várias redes LANs
@@ -8,14 +8,14 @@ REDE FILIAL --> Unir várias redes LANs
 
     * Os escritórios das filiais também podem se conectar por meio das mesmas tecnologias.
 
-    * Soluções de banda larga comuns, como Fibra, Cabo, DSL e sem fio.
+    * Soluções de banda larga comuns (como Fibra, Cabo, DSL e sem fio).
 
 PPP 
 
     Point-to-Point (ISPs apreciam esse protocolo devido aos seus recursos de autentificação; contabilidade - usuário e senha; gerenciamento 
     de links)
 
-    OBS: Os links de Ethernet não suportam o PPP de forma nativa. Foi criada então uma solução para esse problema: o PPPoE (PPP over Ethernet)
+    OBS: Os links de Ethernet não suportam o PPP de forma nativa. Então, Foi criada uma solução para esse problema: o PPPoE (PPP over Ethernet)
 
 VIRTUAL PRIVATE NETWORKS (VPNs) 
 
