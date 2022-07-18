@@ -2,12 +2,12 @@ Skills Integration Chalenge
 
 PROTOCOLO DE AUTENTICAÇÃO 
 
-!Configurações PPP
-interface serial 0/0/0
-encapsulation ppp
-ppp authentication chap
-exit
-username ISP-3 password cisco
+PPP - Configurações
+ interface serial 0/0/0
+ encapsulation ppp
+ ppp authentication chap
+ exit
+ username ISP-3 password cisco
 
 ========================================
 
