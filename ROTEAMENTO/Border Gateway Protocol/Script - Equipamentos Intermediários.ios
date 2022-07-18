@@ -1,6 +1,6 @@
-!Script - Aula presencial
+SCRIPT
 
-!Switches
+#Switches
 !Ativar as interfaces utilizadas
 en
 conf t
@@ -11,7 +11,7 @@ no shut
 
 --------------------------------------
 
-!R1
+#R1
 !Hostname
 en
 conf t
@@ -39,7 +39,7 @@ do wr
 
 --------------------------------------
 
-!R2
+#R2
 !Hostname
 en
 conf t
