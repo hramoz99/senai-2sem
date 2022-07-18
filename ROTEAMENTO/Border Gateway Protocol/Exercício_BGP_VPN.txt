@@ -1,6 +1,7 @@
-AULA 46 - EXERCÍCIO BGP COM VPN (12/05)
+EXERCÍCIO BGP COM VPN 
 
-DOCUMENTAÇÃO - Exercício '30_EXERCÍCIO_VPN'
+
+DOCUMENTAÇÃO - Exercício_VPN
 
 Matriz - s0/1/0 - 200.190.200.2/30
          g0/0/0 - 172.16.255.254/16
@@ -27,7 +28,7 @@ Tunnel - 10.10.10.0/30
 
 SCRIPT
 
-!MATRIZ
+#MATRIZ
 !hostname
 en
 conf t
@@ -63,7 +64,7 @@ do wr
 
 ----------------------------------------------
 
-!CLARO
+#CLARO
 !hostname
 en
 conf t
@@ -92,7 +93,7 @@ do wr
 
 ----------------------------------------------
 
-!VIVO
+#VIVO
 !hostname
 en
 conf t
@@ -120,7 +121,7 @@ do wr
 
 ----------------------------------------------
 
-!FILIAL
+#FILIAL
 !hostname
 en
 conf t
