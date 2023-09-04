@@ -1,0 +1,15 @@
+CONFIGURAÇÃO E VERIFICAÇÃO - CDP 
+
+    Em dispositivos CISCO, o CDP é ativado por padrão, por motivos de segurança. 
+    Com o CDP ativado, um invasor pode coletar informações valiosas sobre o layout de rede, por exemplo 
+    endereços IP, versões do IOS.
+
+show cdp neighbors - ferramenta que disponibiliza informações úteis sobre cada dispositivo CDP vizinho, inclusive:
+
+    - Identificadores de dispositivos - nome do host vizinho 
+
+    - Identificador de portas - O nome da porta local e remota 
+
+    - Lista de recursos - roteador ou switch 
+
+    - Plataforma - hardware do dispositivo

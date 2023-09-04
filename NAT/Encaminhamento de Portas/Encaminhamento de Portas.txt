@@ -1,0 +1,38 @@
+Encaminhamento de portas
+
+    O encaminhamento de porta é o ato de  direcionar o tráfego a uma porta de rede específica. 
+    Essa técnica permite que o usuário interni acesse uma porta IPv4 externa, com um roteador ativado para NAT.
+  
+
+        PROBLEMA
+
+            O NAT oculta os endereços internos, então, o ponto a ponto funcionará somente de dentro para fora, onde o NAT poderá mapear 
+            solicitações contra respostas de entrada.
+            
+
+        SOLUÇÃO
+
+            Essa situação pode ser resolvida com intervenção manual. O encaminhamento de portas pode ser configurado para identificar as portas 
+            específicas que podem ser encaminhadas aos hosts internos.
+            
+
+        LEMBRETE
+
+            Oss aplicativos de software da Internet interagem com as portas de usuários que precisam estar abertas ou disponíveis 
+            para esses aplicativos. Diferentes aplicativos usam portas distintas. Isso torna previsível para aplicativos e 
+            roteadores a identificação de serviços de rede.
+
+            Exemplo: 
+
+                HTTP opera através da conhecida porta 80. Quando alguém insere o endereço http://cisco.com, o navegador exibe o site da Cisco 
+                Systems, Inc. Observe que eles não têm que especificar o número da porta HTTP para a solicitação da página, porque o aplicativo
+                supõe a porta 80.
+
+                Se um número de porta diferente for necessário, ele pode ser adicionado ao URL separado por dois-pontos (:). Por exemplo, se o 
+                Servidor web aguardar na porta 8080, o usuário digitará http://www.example.com:8080
+
+        CONCLUSÃO
+
+            O encaminhamento de portas permite que os usuários na Internet acessem servidores internos usando o endereço de porta WAN do 
+            roteador e do número da porta externa correspondente. Os servidores internos são normalmente configurados com endereços IPv4 
+            privados de RFC 1918.

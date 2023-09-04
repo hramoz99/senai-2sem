@@ -1,0 +1,11 @@
+Configuração de um roteador como um cliente de DHCPv6 stateless
+
+Geralmente, um cliente DHCPv6 stateless é um dispositivo, como um computador, um tablet  ou webcam.
+
+    * - O roteador do cliente precisa de um link local IPv6 na interface para enviar e receber mensagens IPv6, como mensagens de RS e mensagens de DHCPv6.
+
+    * - O link local de um roteador é criado automaticamente quando o IPv6 é ativado na interface. Isto pode ocorrer quando um endereço unicast global está configurado na interface ou com o uso do comando ipv6 enable. Após receber um endereço do link local, o roteador pode descobrir vizinhos IPv6.
+
+    * - O comando 'ipv6 enable' é usado quando o roteador ainda não possui um endereço unicast global.
+
+    * - O comando 'ipv6 address autoconfig' permite a configuração automática de endereçamento IPv6 usando SLAAC. Por suposição, o roteador de servidor é configurado para DHCPv6 stateless, portanto, envia uma mensagem de RA para informar o roteador cliente de forma que ele use o DHCPv6 stateless para obter as informações de DNS.

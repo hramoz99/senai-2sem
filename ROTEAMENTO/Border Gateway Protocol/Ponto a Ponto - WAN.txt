@@ -1,0 +1,87 @@
+PONTO A PONTO - WAN 
+
+WAN = Wide Área Network [Camada Física (1) e Enlace de Dados (2) | modelo OSI]
+
+    * A rede WAN é propriedade de um provedor de serviços ISPs (Internet Service Provider);
+
+    * Os provedores de serviços de WAN incluem rede de telefone, empresa de cabeamento ou um serviço satélite.
+
+PPT = Ponto de Tráfego (redução de custos)
+
+    * Telefonia IP = trabalhar pela rede 
+    
+
+WAN - DISCAGEM
+
+    * Conexões discadas e antigas que usavam uma linha telefônica analógica para a transmissão de dados;
+
+   Observação: Embora poucas empresas suportem acesso discado, ainda é uma solução viável para áreas remotas com opções de acesso à WAN limitadas.
+   
+
+WAN – DSL
+
+    * Tecnologia de conexão sempre ativa que usa linhas de telefone de par trançado para transportar dados em largura de banda elevada e oferece serviços de IP para os assinantes.
+
+    CURIOSIDADE: 
+
+        SDSL oferece a mesma capacidade nas duas direções. Os tipos de DSL oferecem larguras de banda diferentes, algumas com capacidades acima de 40 Mb/s.
+        
+
+WAN – Ethernet [100m]
+
+    Aumento da capacidade e distância dos padrões Ethernet;
+
+    Ex.: 1000BASE-LX [5km] / 1000BASE-ZX [70km];
+
+    Está sendo usado normalmente para substituir os tradicionais links WAN de Frame Relay e ATM.
+
+    x25 = modem para tráfego de transação eletrônica
+    sitef = software seguro para transação de dados financeiros
+    
+
+WAN - VSAT
+
+    * Very Smal Aperture Terminal (Terminal de abertura muito pequeno);
+
+    * Via satélite e antena parabólica para conexões em um local remoto.
+    
+
+WAN – Cabo 
+
+    * Os cabos coaxiais são amplamente utilizados em áreas urbanas para distribuir sinais de televisão.
+
+    * O acesso à rede está disponível a partir de muitos provedores de televisão a cabo.
+
+    * Permite maior largura de banda do que o telefone convencional.
+    
+
+WAN – WiMAX [Worldwide Interoperability for Microwave Access]
+
+    * Nova tecnologia em ascensão.
+
+    * Padrão IEEE 802.16;
+
+    * O WiMAX fornece serviço de banda larga de alta velocidade com acesso sem fio e cobertura ampla, como uma rede de telefonia celular e não por meio dos pontos de Wi-Fi;
+
+    * Para acessar uma rede WiMAX, os assinantes devem assinar o ISP com uma torre WiMAX a 30 km do local.
+    
+
+SEM FIO
+        - Wi-Fi municipal
+        - Celular/móvel
+        
+
+WAN – Celular 3G, 4G e 5G [http://www.coberturacelular.com.br/]
+
+    * 3G/4G/5G sem fio-abreviação da terceira, quarta e quinta gerações de acesso a celular.
+
+    * Essas tecnologias suportam acesso à internet sem fio.
+
+    * LTE (Long-term Evolution, Evolução de Longo Prazo) refere-se a uma tecnologia mais nova e mais rápida, considerada parte da tecnologia de quarta geração (4G).
+
+    OBS: Não confundir com o Padrão IEEE 802.11ac para redes Wi-fi.
+
+    CURIOSIDADE = Tecnologia Mash
+
+        Troca de wi-fi através das antenas 
+        Exemplo: "Wi-fi Sala" e "Wi-fi Quarto"

@@ -1,0 +1,39 @@
+FORMATO DE MENSAGEM DO SYSLOG
+    
+   Nível de gravidade no syslog
+
+        Aviso de nível 4 - nível 0 de emergência: 
+        
+            As mensagens de erro sobre a presença de defeitos de software ou de hardware significam que o processamento do 
+            dispositivo é afetada. A gravidade do problema determina o nível de syslog aplicado.
+
+        Notificação de Nível 5: 
+        
+            A notificação de nível 5 é para eventos normais, porém significativos. Por exemplo, transições entre interface ativa ou inativa. As 
+            mensagens de reinicialização do sistema são exibidas no nível de notificação.
+
+        Informativo de nível 6: 
+        
+            Mensagem de informação normal, que não afetam a funcionalidade do dispositivo. Quando um dispositivo CISCO é 
+            inicializado, aparecerá a seguinte mensagem: %LICENSE-6-EULA_ACCEPT_ALL: (direito de contrato de licença de usuário)
+
+        Depuração de nível 7: 
+        
+            Indica que as mensagens de saída são geradas de vários comandos debug.
+
+
+    Instalações de mensagem syslog em roteadores CISCO:
+
+        - IP
+        - Protocolo OSPF
+        - Interface IP (IF)
+        - IP Security (IPsec)
+        - Sistema operacional SYS
+
+    Formato de mensagens syslog no Software Cisco IOS
+
+        seq no: timestamp: %facility-severity-MNEMONIC: description
+
+        Exemplo: 
+        00:00:46: %LINK-3-UPDOWN: canal de porta 1 da interface. Estado alterado para cima
+

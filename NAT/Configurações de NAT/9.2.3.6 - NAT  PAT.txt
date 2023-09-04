@@ -1,0 +1,67 @@
+NAT PAT 
+
+    * Roteador mantém informações suficientes de protocolos de nível superior, de números de portas TCP ou UDP.
+    
+    * Quando vários endereços locais internos são mapeados para um endereço global interno, os números de porta TCP ou UDP de cada host interno
+    distinguem os endereços locais
+
+    SA - Source Address (utiliza portas altas)
+    DA - Destinations Address (utiliza portas baixas)
+
+    65536 - é o número máximo de Portas que um IP pode ter
+    Comunicação TCP - Olhando para o cliente
+    * Portas baixas: 1 - 1023
+    * Origem Portas altas: 1024 - 65536
+   NOTA: o número de endereços internos que podem ser atribuídos a um único endereço IPv4 é de 4000
+
+SCRIPT - Exercício 9.2.3.6
+
+* O link de Internet já está funcionando no R2, basta fazer um ping do mesmo para o servidor "cisco.pka"
+* Router atrás de outro router (REDE STUB) - Rede 192.168.10.0 e 192.168.30.0
+
+#R2
+!Entrar no modo de configuração global
+en
+conf t
+
+#Interface NAT - INSIDE e OUTSIDE
+int f0/0
+ip nat inside
+int s0/0/0
+ip nat inside
+int s0/0/1
+ip nat inside
+
+#Interface NAT - OUTSIDE
+int s0/1/0
+ip nat outside
+exit
+
+#ACL (padrão nomeada)
+ip access-list standard R2NAT
+permit 192.168.10.0 0.0.0.255
+permit 192.168.20.0 0.0.0.255
+permit 192.168.30.0 0.0.0.255
+exit
+
+#Pool
+ip nat pool R2POOL 209.165.202.129 209.165.202.129 netmask 255.255.255.252
+ip nat inside source list R2NAT pool R2POOL overload
+
+#Conversão de NAT estatico (para mapear o endereço interno local.pka para seu endereço externo)
+ip nat inside source static 192.168.20.254 209.165.202.130
+
+--------------------------------------------------------------------------------------------------------------------------
+
+ou 
+
+#Conversão de NAT estatico (para mapear o endereço interno local.pka para seu endereço externo | Filtro de porta)
+ip nat inside source static tcp 192.168.20.254 80 209.165.202.130 80
+
+ou 
+
+#Conversão de NAT estatico (para mapear o endereço interno local.pka para seu endereço externo | Mascarar a porta / Hardening)
+ip nat inside source static tcp 192.168.20.254 80 209.165.202.130 8080
+
+A pesquisa no navegador deve ser feita especificando a porta
+    209.165.202.130:8080

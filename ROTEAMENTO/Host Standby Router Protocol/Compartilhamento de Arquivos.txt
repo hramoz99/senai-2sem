@@ -1,0 +1,9 @@
+Máquina Física para Máquina Virtual:
+
+1) Definir senha e usuário (administrador);
+
+2) DHCP na máquina virtual;
+
+3) Windows + R
+
+4) \\[ip-da-maquina-virtual]

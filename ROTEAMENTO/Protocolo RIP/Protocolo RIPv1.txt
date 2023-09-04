@@ -1,0 +1,55 @@
+PROTOCOLO RIP (26/02)
+
+  COMANDOS
+  	Windows + R ----> Abre a execução do Windows
+  	ncpa.cpl ----> Abre as interfaces NIC
+
+  Apagar as configurações || RT E SW
+  	* Inciar o boot - comando Ctrl + C (até aparecer SWT: ou RT:)
+  	- Dar o comando ----> del flash: config.text (RT)
+                              del flash: vlan.dat (SW)
+
+  "Compartilhamento avançado" / Firewall - Ativar os pacotes IP
+
+  OBS: Configurações no Putty
+  	Selecionar a opção Serial - COM1 (COM em que o PC utilizará) - Ir na última opção do Serial e clicar em "NONE" - Salvar as alterações
+
+  SCRIPT
+
+  !SP
+  en
+  conf t
+  hostname SP
+  int g0/0
+  ip add 192.168.1.1 255.255.255.0
+  no shutdown
+  int g0/1
+  ip add 10.0.0.1 255.255.255.252
+  no shutdown
+  exit
+  router rip
+  version 2
+  network 192.168.1.0
+  network 10.0.0.0
+  passive-interface g0/0
+  end
+  wr
+
+  !RIO
+  en
+  conf t
+  hostname RIO
+  int g0/0
+  ip add 192.168.0.1 255.255.255.0
+  no shutdown
+  int g0/1
+  ip add 10.0.0.2 255.255.255.252
+  no shutdown
+  exit
+  router rip
+  version 2
+  network 192.168.0.0
+  network 10.0.0.0
+  passive-interface g0/0
+  end
+  wr

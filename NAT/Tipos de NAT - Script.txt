@@ -1,0 +1,34 @@
+Configuração das portas de entrada/saida junto com a associação do pool com as permissões;
+
+* Comando para limpar os endereços antigos do NAT
+  clear ip nat translation
+
+NAT DINÂMICA
+
+enable 
+configure terminal
+int range g0/0 - 2
+ip nat inside
+exit
+ip access-list standard LAN_AMB1
+permit 192.160.0.0 0.0.0.255
+exit
+ip nat pool intervalo-1P-WAN 200.0.0.101 200.0.0.110 netmask 255.255.255.0
+ip nat inside source list LAN_AMB1 pool intervalo-1P-WAN
+exit
+
+NAT PAT
+
+enable
+configure terminal
+ip nat pool IP-WN-PAT 200.0.0.1 200.0.0.1 netmask 255.255.255.0 
+ip access-list standard PAT AMB2
+permit 192.160.1.0 0.0.0.255
+exit
+inside source list PAT AMB2 pool IP-WN-PAT overload
+exit
+
+NAT ESTÁTICO 
+enable
+configure terminal
+ip nat inside source static 192.68.2.100 200.0.0.3

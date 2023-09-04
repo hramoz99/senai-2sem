@@ -1,0 +1,12 @@
+NAT Estático 
+
+NAT ESTÁTICO | EXERCÍCIO 9.2.1.4
+
+    * Endereço local “interno” – 192.168.10.10
+
+    * Endereço global “interno” – 209.165.200.226 (router R2, out)
+
+    * Endereço global “externo” – ISP para chegar até (google.com.br)
+
+    * Endereço local “externo” – Destino Servidor (google.com.br)
+

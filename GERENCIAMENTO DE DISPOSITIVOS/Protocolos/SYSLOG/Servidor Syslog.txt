@@ -1,0 +1,4 @@
+Servidor Syslog
+
+    O Servidor SYSLOG exibi e analisa as mensagens de saída de syslog em uma interface própria ao usuário, onde são organizadas em colunas 
+    predefinidas para facilitar a interpretação. Os carimbos de data e hora serão exibidas na saída do servidor, caso estiverem configurados no dispositivo de rede.
