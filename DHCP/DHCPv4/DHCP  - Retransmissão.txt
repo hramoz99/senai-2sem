@@ -1,6 +1,6 @@
 Retransmissão DHCPv4
 
-Configurar um endereço de ajuda do IOS Cisco - Essa solução permite que um roteador reenvie os broadcasts de DHCPv4 para o servidor DHCPv4. Quando o roteador encaminha uma designação de endereço/solicitações do parâmetro, está atuando como um agente de retransmissão de DHCPv4.
+Endereço de ajuda do IOS Cisco - Essa solução permite que um roteador reenvie os broadcasts de DHCPv4 para o servidor DHCPv4. Quando o roteador encaminha uma designação de endereço/solicitações do parâmetro, está atuando como um agente de retransmissão de DHCPv4.
 
 Comando atrelado na interface que receberá o broadcast
 

@@ -1,6 +1,6 @@
 Origem de leasing
 
-. Quando o cliente inicializa ou quer ingressar em uma rede, ele começa um processo de quatro etapas para obter um aluguel. Um cliente inicia o processo com uma mensagem de broadcast DHCPDISCOVER com seu próprio endereço MAC para descobrir os servidores DHCPv4 disponíveis.
+. Quando o cliente inicializa ou quer ingressar em uma rede, começa um processo de quatro etapas para obter um aluguel. Inicia o processo com uma mensagem de broadcast DHCPDISCOVER com seu próprio endereço MAC para descobrir os servidores DHCPv4 disponíveis.
 
 Descoberta do DHCP (DHCPDISCOVER)
 

@@ -1,13 +1,13 @@
 NAT PAT 
 
 
-1. PASSO  - Definir as interfaces de entrada e saída (NAT)
-2. PASSO  - Criar uma ACL 
-3. PASSO  - Definir o pool de endereços
-4. PASSO  - Criação do PAT
+	1. PASSO  - Definir as interfaces de entrada e saída (NAT)
+	2. PASSO  - Criar uma ACL 
+	3. PASSO  - Definir o pool de endereços
+	4. PASSO  - Criação do PAT
 
-CURIOSIDADE - O que é PPoE (Discador / discagem | Necessita um usuário e uma senha)
-    EXEMPLO:
+
+O que é PPoE (Discador | Necessita de um usuário e uma senha)
     
     (Distribuição normal de IPs - Link fibra)
 
@@ -22,6 +22,7 @@ CURIOSIDADE - O que é PPoE (Discador / discagem | Necessita um usuário e uma s
          IP 200.200.10.2          (Roteador)
          MK 255.255.255.255       /32
          IP 10.10.10.1            (Modem)
+
 
 Verificação NAT                   Limpar as verificações
 

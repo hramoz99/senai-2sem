@@ -1,6 +1,6 @@
 NAT PAT 
 
-    * Roteador mantém informações suficientes de protocolos de nível superior, de números de portas TCP ou UDP.
+    * O Roteador mantém informações suficientes dos protocolos de nível superior e de números de portas TCP ou UDP.
     
     * Quando vários endereços locais internos são mapeados para um endereço global interno, os números de porta TCP ou UDP de cada host interno
     distinguem os endereços locais

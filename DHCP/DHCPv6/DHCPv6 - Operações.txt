@@ -1,6 +1,6 @@
 Operações do DHCPv6
 
-O DHCPv6 stateless, stateful ou ambos, começam com uma mensagem do RA ICMPv6 do roteador. A mensagem do RA pode ter sido uma mensagem periódica ou solicitada pelo dispositivo usando uma mensagem de RS.
+O DHCPv6 começa com uma mensagem do RA ICMPv6. A mensagem do RA pode ter sido uma mensagem periódica ou solicitada pelo dispositivo usando uma mensagem de RS.
 
 - Se o DHCPv6 stateful ou stateless for indicado na mensagem do RA, o dispositivo iniciará as comunicações do cliente DHCPv6/servidor.
 

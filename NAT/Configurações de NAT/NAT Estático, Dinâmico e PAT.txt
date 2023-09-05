@@ -1,14 +1,12 @@
 NAT Estático, Dinâmico e PAT (13-04)
 
-CURIOSIDADES - Os celulares funcionam como um roteador. Quando roteamos nossa internet, ele cria uma rede interna.
-               Nosso computador também possui essa função (AD HOC = PC disponibiliza uma conexão wi-fi para outros hosts)
-
                DNS PRIMÁRIO DO GOOGLE - 8.8.4.4/8
                DNS SECUNDÁRIO DO GOOGLE - 8.8.8.8/8
 
                POR IP = exsitem 65.535 portas
 
                PAT = gasta muito processamento / armazenamento
+
 
 SCRIPT - Cenário Integrado NAT PAT (As alterações devem ser feitas no roteador de borda)
 

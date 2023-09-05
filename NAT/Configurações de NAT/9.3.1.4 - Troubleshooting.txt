@@ -1,8 +1,7 @@
 TROUBLESHOOTING (9.3.1.4)
 
-As interfaces NAT 'inside' e 'outside' estão posicionadas de maneira incorreta
+!!! As interfaces NAT 'inside' e 'outside' estão posicionadas de maneira incorreta !!!
 
-SOLUÇÃO 
 
 # Apagar o erro
 en

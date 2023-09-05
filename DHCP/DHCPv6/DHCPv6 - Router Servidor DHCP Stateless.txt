@@ -2,12 +2,13 @@ Configuração de um roteador como um servidor DHCPv6 stateless
 
 Passo 1. Ativar o roteamento IPv6 
 
-   O comando ipv6 unicast-routing é usado para ativar o roteamento de IPv6. Esse comando não é necessário para            que o roteador seja um servidor DHCPv6 stateless, mas para o roteador originar mensagens de RA do ICMPv6.
+   O comando 'ipv6 unicast-routing' é usado para ativar o roteamento de IPv6. Esse comando não é necessário para que o roteador seja um servidor DHCPv6 stateless, mas para o roteador originar mensagens de RA do ICMPv6.
+
 
 Passo 2. Configurar um pool de DHCPv6
 
-  O comando ipv6 dhcp pool cria um pool e coloca o roteador em modo de configuração DHCPv6.
-            !Identificado pelo prompt como Router(config-dhcpv6)#.
+   O comando 'ipv6 dhcp pool' cria um pool e coloca o roteador em modo de configuração DHCPv6.
+            !!Identificado pelo prompt como Router(config-dhcpv6)#!!
 
 Passo 3. Configurar parâmetros do pool
 
