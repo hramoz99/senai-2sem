@@ -1,4 +1,4 @@
-﻿NSCRIPT - Exercício 9.4.1.2
+﻿SCRIPT - Exercício 9.4.1.2
 
 # Cnt-S
 !Entrar no modo de configuração global
@@ -168,5 +168,5 @@ int s0/1/0
 ip nat outside
 end
 
-# vSalvar as configurações (tela de enable)
+# Salvar as configurações (tela de enable)
 wr
