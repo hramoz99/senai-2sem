@@ -1,6 +1,6 @@
 ## ENCAMINHAMENTO DE PORTA
 
-#### Iniciar comunicação ESTÁTICA entre um endereço local interno e uma porta local com um endereço global interno e a porta global
+#### Comunicação ESTÁTICA entre um endereço local interno, uma porta local com um endereço global interno e a porta global
 
 ```
 (config)#ip nat inside source [static (tcp or udp)] [ip-local-interno] [porta-local] [ip-global-interno] [porta-global]
