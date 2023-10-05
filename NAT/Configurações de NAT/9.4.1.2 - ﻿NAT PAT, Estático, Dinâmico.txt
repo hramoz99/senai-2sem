@@ -1,4 +1,4 @@
-﻿SCRIPT - Exercício 9.4.1.2
+﻿NSCRIPT - Exercício 9.4.1.2
 
 # Cnt-S
 !Entrar no modo de configuração global
