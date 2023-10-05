@@ -1,6 +1,5 @@
 NAT PAT 
 
-
 	1. PASSO  - Definir as interfaces de entrada e saída (NAT)
 	2. PASSO  - Criar uma ACL 
 	3. PASSO  - Definir o pool de endereços
@@ -32,41 +31,44 @@ Verificação NAT                   Limpar as verificações
  NOTA: 
  Ativar CLI no Packet tracer - options ==> preferences ==> HIDE ==> desmarcar 'hide cli'
 
-TROUBLESHOOTING (9.3.1.4)
+SCRIPT
 
-As interfaces NAT 'inside' e 'outside' estão posicionadas de maneira incorreta
-
-SOLUÇÃO - Aplicadas no R2
-
-#Apagar o erro
+!Router0
+!Entrar no modo de configuração global
 en
 conf t
-int s0/0/0
-no ip nat inside 
-int s0/0/1
-no ip nat outside
+
+!Ativar as interfaces
+int range g0/0-1
+no shutdown
 exit
 
-#Correção
-int s0/0/0
-ip nat outside
-int s0/0/1
+!Atrelar os endereços IPs as interfaces
+int g0/0
+ip add 192.168.10.1 255.255.255.0
+int g0/1
+ip add 200.200.10.1 255.255.255.252 
+exit
+
+!Definir as interfaces NAT - inside e outside
+int g0/0
 ip nat inside
+int g0/1
+ip nat outside
 exit
 
--------------------------------------------------
+!Pool de endereços (liberar apenas 1 IP) 
+ip nat pool IP-SRV-PAT 200.200.10.1 200.200.10.1 netmask 255.255.255.252
 
-Máscara da ACL 101 está incorreta
+!Criar um ACL
+ip access-list standard PAT-PC0
+permit 192.168.10.0 0.0.0.255
+exit
 
-SOLUÇÃO
+!Conversão de sobrecarga
+ip nat inside source list PAT-PC0 pool IP-SRV-PAT overload
 
-#Apagar o erro
-no access-list 101
+!Salvar as configurações
+end
+wr
 
-#Correção
-access-list 101 permit ip 10.4.10.0 0.0.1.255 any
-
-ou 
-
-!access-list 101 permit ip 10.4.10.0 0.0.0.255 any
-!access-list 101 permit ip 10.4.11.0 0.0.0.255 any
