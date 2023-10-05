@@ -8,7 +8,7 @@ NAT Estático, Dinâmico e PAT (13-04)
                PAT = gasta muito processamento / armazenamento
 
 
-SCRIPT - Cenário Integrado NAT PAT (As alterações devem ser feitas no roteador de borda)
+Cenário Integrado NAT PAT (As alterações devem ser feitas no roteador de borda)
 
 #Configurações no AMBIENTE 1 - NAT DINÂMICO
 !Roteador empresa - ACME
