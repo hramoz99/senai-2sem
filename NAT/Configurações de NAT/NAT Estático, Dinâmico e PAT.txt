@@ -1,4 +1,4 @@
-NAT Estático, Dinâmico e PAT (13-04)
+NAT Estático, Dinâmico e PAT
 
                DNS PRIMÁRIO DO GOOGLE - 8.8.4.4/8
                DNS SECUNDÁRIO DO GOOGLE - 8.8.8.8/8
