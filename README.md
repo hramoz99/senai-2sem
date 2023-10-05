@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/78046279/124523167-4c69c880-ddcc-11eb-901d-a1e4ebecc638.png)
 
-Este repositório contém conceitos (organizados em pastas) abordados no 2º semestre do Curso Técnico de Redes de Computadores - SENAI de informática
+Este repositório contém conceitos (organizados em pastas) abordados no 2º semestre do Curso Técnico de Redes de Computadores - SENAI de Informática
 
 ### Objetivos
 
