@@ -24,4 +24,4 @@ Sites | Cursos
 [AWS Academy](https://aws.amazon.com/) |  Conhecimento do Mundo  Cloud
 [Senai EAD](https://ead.sp.senai.br/) | Excel Básico
 [Senai EAD](https://ead.sp.senai.br/) | Fundamentos de logística
-[Senai EAD](https://ead.sp.senai.br/) | Privacidade e Proteção de dados 
+[Senai EAD](https://ead.sp.senai.br/) | Privacidade e Proteção de dados (LGPD)
